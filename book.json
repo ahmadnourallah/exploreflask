@@ -1,5 +1,12 @@
 {
-     "direction" : "rtl",
-     "language"  : "ar",
-     "title"     : "اكتشف فلاسك"
+     "direction"     : "rtl",
+     "language"      : "ar",
+     "title"         : "اكتشف فلاسك",
+     "plugins"       : ["favicon"],
+     "pluginsConfig" : {
+          "favicon"  : {
+               "shortcut" : "images/flask.png",
+               "bookmark" : "images/flask.png"
+         }
+     }
 }
