@@ -5,3 +5,4 @@
 * [مواثيق كتابة الشيفرة البرمجية](docs/coding_conventions.md)
 * [بيئة العمل](docs/environment.md)
 * [تنظيم المشروع](docs/organizing.md)
+* [الإعداد](docs/configuration.md)
