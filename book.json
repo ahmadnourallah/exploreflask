@@ -1,7 +1,7 @@
 {
      "direction"     : "rtl",
      "language"      : "ar",
-     "title"         : "اكتشف فلاسك",
+     "title"         : "استكشف فلاسك",
      "plugins"       : ["favicon"],
      "pluginsConfig" : {
           "favicon"  : {
