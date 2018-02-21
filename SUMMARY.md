@@ -7,4 +7,5 @@
 * [تنظيم المشروع](docs/organizing.md)
 * [الإعداد](docs/configuration.md)
 * [استخدامات متقدمة لطرق العرض والتوجيه](docs/views.md)
+* [المخططات](docs/blueprints.md)
 * [الخاتمة](docs/conclusion.md)
