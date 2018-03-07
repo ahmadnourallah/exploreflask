@@ -1,0 +1,626 @@
+
+<!DOCTYPE HTML>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>استخدامات متقدمة لدوال العرض والتوجيه · استكشف فلاسك</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="blueprints.html" />
+    
+    
+    <link rel="prev" href="configuration.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/flask.png' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/flask.png' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="اكتب للبحث" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    الرئيسية
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    المقدمة
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="coding_conventions.html">
+            
+                <a href="coding_conventions.html">
+            
+                    
+                    مواثيق كتابة الشيفرة البرمجية
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="environment.html">
+            
+                <a href="environment.html">
+            
+                    
+                    بيئة العمل
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="organizing.html">
+            
+                <a href="organizing.html">
+            
+                    
+                    تنظيم المشروع
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="configuration.html">
+            
+                <a href="configuration.html">
+            
+                    
+                    الإعداد
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="views.html">
+            
+                <a href="views.html">
+            
+                    
+                    استخدامات متقدمة لدوال العرض والتوجيه
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="blueprints.html">
+            
+                <a href="blueprints.html">
+            
+                    
+                    المخططات
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="templates.html">
+            
+                <a href="templates.html">
+            
+                    
+                    القوالب
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="static.html">
+            
+                <a href="static.html">
+            
+                    
+                    الملفات الساكنة
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="conclusion.html">
+            
+                <a href="conclusion.html">
+            
+                    
+                    الخاتمة
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            نشرت مع GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >استخدامات متقدمة لدوال العرض والتوجيه</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645;&#x627;&#x62A;-&#x645;&#x62A;&#x642;&#x62F;&#x645;&#x629;-&#x644;&#x62F;&#x648;&#x627;&#x644;-&#x627;&#x644;&#x639;&#x631;&#x636;-&#x648;&#x627;&#x644;&#x62A;&#x648;&#x62C;&#x64A;&#x647;">&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645;&#x627;&#x62A; &#x645;&#x62A;&#x642;&#x62F;&#x645;&#x629; &#x644;&#x62F;&#x648;&#x627;&#x644; &#x627;&#x644;&#x639;&#x631;&#x636; &#x648;&#x627;&#x644;&#x62A;&#x648;&#x62C;&#x64A;&#x647;</h1>
+<p><img src="../images/views.png"></p>
+<h2 id="&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A;-&#x627;&#x644;&#x639;&#x631;&#x636;-view-decorators">&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x639;&#x631;&#x636; (View decorators)</h2>
+<p>&#x645;&#x632;&#x62E;&#x631;&#x641;&#x627;&#x62A; &#x628;&#x627;&#x64A;&#x62B;&#x648;&#x646; &#x647;&#x64A; &#x62F;&#x648;&#x627;&#x644; &#x62A;&#x64F;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x644;&#x62A;&#x63A;&#x64A;&#x64A;&#x631; &#x647;&#x64A;&#x626;&#x629; (&#x648;&#x638;&#x64A;&#x641;&#x629; &#x623;&#x648; &#x639;&#x645;&#x644;) &#x62F;&#x648;&#x627;&#x644; &#x623;&#x62E;&#x631;&#x649;. &#x639;&#x646;&#x62F;&#x645;&#x627; &#x64A;&#x62A;&#x645; &#x62A;&#x646;&#x641;&#x64A;&#x630; &#x627;&#x644;&#x62F;&#x627;&#x644;&#x629; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x64E;&#x641;&#x650;&#x629;&#x60C; &#x64A;&#x64F;&#x646;&#x64E;&#x641;&#x64E;&#x630; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; &#x628;&#x62F;&#x644;&#x627;&#x64B; &#x645;&#x646;&#x647;&#x627;. &#x64A;&#x62A;&#x645;&#x643;&#x646; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; &#x645;&#x646; &#x62A;&#x646;&#x641;&#x64A;&#x630; &#x639;&#x645;&#x644;&#x64A;&#x627;&#x62A;&#x60C; &#x623;&#x648; &#x62A;&#x639;&#x62F;&#x64A;&#x644; &#x627;&#x644;&#x645;&#x639;&#x627;&#x645;&#x644;&#x627;&#x62A; (arguments)&#x60C; &#x623;&#x648; &#x625;&#x64A;&#x642;&#x627;&#x641; &#x627;&#x644;&#x62A;&#x646;&#x641;&#x64A;&#x630;&#x60C; &#x623;&#x648; &#x627;&#x633;&#x62A;&#x62F;&#x639;&#x627;&#x621; &#x627;&#x644;&#x62F;&#x627;&#x644;&#x629; &#x627;&#x644;&#x623;&#x635;&#x644;&#x64A;&#x629; (&#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x64E;&#x641;&#x650;&#x629;). &#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A; &#x644;&#x644;&#x625;&#x62D;&#x627;&#x637;&#x629; &#x628;&#x62F;&#x648;&#x627;&#x644; &#x627;&#x644;&#x639;&#x631;&#x636; (&#x627;&#x644;&#x62F;&#x648;&#x627;&#x644; &#x627;&#x644;&#x62A;&#x64A; &#x62A;&#x64F;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x644;&#x639;&#x631;&#x636; &#x627;&#x644;&#x645;&#x62D;&#x62A;&#x648;&#x649;) &#x628;&#x634;&#x64A;&#x641;&#x631;&#x629; &#x628;&#x631;&#x645;&#x62C;&#x64A;&#x629; &#x646;&#x648;&#x62F; &#x62A;&#x634;&#x63A;&#x64A;&#x644;&#x647;&#x627; &#x642;&#x628;&#x644; &#x62A;&#x646;&#x641;&#x64A;&#x630; &#x62F;&#x648;&#x627;&#x644; &#x627;&#x644;&#x639;&#x631;&#x636; &#x647;&#x630;&#x647;.</p>
+<pre><code class="lang-python"><span class="hljs-meta">@decorator_function</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">decorated</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">pass</span>
+</code></pre>
+<p>&#x625;&#x630;&#x627; &#x642;&#x645;&#x62A; &#x628;&#x627;&#x62A;&#x628;&#x627;&#x639; &#x62F;&#x648;&#x631;&#x629; &#x641;&#x644;&#x627;&#x633;&#x643;&#x60C; &#x641;&#x642;&#x62F; &#x62A;&#x628;&#x62F;&#x648; &#x635;&#x64A;&#x63A;&#x629; &#x627;&#x644;&#x634;&#x64A;&#x641;&#x631;&#x629; &#x627;&#x644;&#x633;&#x627;&#x628;&#x642;&#x629; &#x645;&#x623;&#x644;&#x648;&#x641;&#x629;. &#x64A;&#x64F;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; <code>app.route@</code> &#x644;&#x62A;&#x62D;&#x62F;&#x64A;&#x62F; &#x639;&#x646;&#x627;&#x648;&#x64A;&#x646; &#x62F;&#x648;&#x627;&#x644; &#x627;&#x644;&#x639;&#x631;&#x636; &#x641;&#x64A; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x627;&#x62A; &#x641;&#x644;&#x627;&#x633;&#x643;.</p>
+<p>&#x62F;&#x639;&#x648;&#x646;&#x627; &#x646;&#x623;&#x62E;&#x630; &#x646;&#x638;&#x631;&#x629; &#x639;&#x644;&#x649; &#x628;&#x639;&#x636; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x623;&#x62E;&#x631;&#x649; &#x627;&#x644;&#x62A;&#x64A; &#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645;&#x647;&#x627; &#x641;&#x64A; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x627;&#x62A; &#x641;&#x644;&#x627;&#x633;&#x643;.</p>
+<h3 id="&#x627;&#x644;&#x645;&#x635;&#x627;&#x62F;&#x642;&#x629;">&#x627;&#x644;&#x645;&#x635;&#x627;&#x62F;&#x642;&#x629;</h3>
+<p>&#x62A;&#x62C;&#x639;&#x644; &#x625;&#x636;&#x627;&#x641;&#x629; Flask-Login &#x645;&#x646; &#x627;&#x644;&#x633;&#x647;&#x644; &#x625;&#x636;&#x627;&#x641;&#x629; &#x646;&#x638;&#x627;&#x645; &#x62A;&#x633;&#x62C;&#x64A;&#x644; &#x625;&#x644;&#x649; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x643;. &#x628;&#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x625;&#x644;&#x649; &#x623;&#x646;&#x647;&#x627; &#x62A;&#x64F;&#x645;&#x643;&#x650;&#x646;&#x64F;&#x643; &#x645;&#x646; &#x627;&#x644;&#x62A;&#x639;&#x627;&#x645;&#x644; &#x645;&#x639; &#x62A;&#x641;&#x627;&#x635;&#x64A;&#x644; &#x645;&#x635;&#x627;&#x62F;&#x642;&#x629; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645;&#x60C; &#x62A;&#x648;&#x641;&#x631; &#x644;&#x646;&#x627; &#x647;&#x630;&#x647; &#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; &#x64A;&#x642;&#x648;&#x645; &#x628;&#x62D;&#x635;&#x631; &#x648;&#x635;&#x648;&#x644; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645;&#x64A;&#x646; &#x627;&#x644;&#x645;&#x633;&#x62C;&#x644;&#x64A;&#x646; &#x641;&#x642;&#x637; &#x625;&#x644;&#x649; &#x62F;&#x648;&#x627;&#x644; &#x639;&#x631;&#x636; &#x645;&#x639;&#x64A;&#x646;&#x629; &#x648;&#x647;&#x648; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; <code>login_required@</code>.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># app.py &#x645;&#x644;&#x641;</span>
+
+<span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> render_template
+<span class="hljs-keyword">from</span> flask_login <span class="hljs-keyword">import</span> login_required, current_user
+
+
+<span class="hljs-meta">@app.route(&apos;/&apos;)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">index</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">&quot;index.html&quot;</span>)
+
+<span class="hljs-meta">@app.route(&apos;/dashboard&apos;)</span>
+<span class="hljs-meta">@login_required</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">account</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">&quot;account.html&quot;</span>)
+</code></pre>
+<blockquote>
+<b>&#x62A;&#x62D;&#x630;&#x64A;&#x631;</b><br>
+&#x64A;&#x62C;&#x628; &#x648;&#x636;&#x639; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; <code>app.route@</code> &#x641;&#x64A; &#x645;&#x642;&#x62F;&#x645;&#x629; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A; &#x62F;&#x627;&#x626;&#x645;&#x627;&#x64B; (&#x623;&#x648;&#x644; &#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; &#x639;&#x646;&#x62F; &#x627;&#x633;&#x62A;&#x62F;&#x639;&#x627;&#x621; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A;).
+</blockquote>
+
+<p>&#x641;&#x642;&#x637; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645;&#x64A;&#x646; &#x627;&#x644;&#x645;&#x633;&#x62C;&#x644;&#x64A;&#x646; (&#x627;&#x644;&#x645;&#x635;&#x627;&#x62F;&#x642;&#x64A;&#x646;) &#x633;&#x64A;&#x62A;&#x645;&#x643;&#x646;&#x648;&#x646; &#x645;&#x646; &#x627;&#x644;&#x648;&#x644;&#x648;&#x62C; &#x625;&#x644;&#x649; &#x627;&#x644;&#x631;&#x627;&#x628;&#x637; <em>dashboard/</em>. &#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x625;&#x639;&#x62F;&#x627;&#x62F; &#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x644;&#x62A;&#x648;&#x62C;&#x647; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645;&#x64A;&#x646; &#x627;&#x644;&#x63A;&#x64A;&#x631; &#x645;&#x633;&#x62C;&#x644;&#x64A;&#x646; &#x625;&#x644;&#x649; &#x635;&#x641;&#x62D;&#x629; &#x627;&#x644;&#x62A;&#x633;&#x62C;&#x64A;&#x644;&#x60C; &#x623;&#x648; &#x644;&#x625;&#x631;&#x62C;&#x627;&#x639; &#x631;&#x645;&#x632; &#x627;&#x644;&#x62D;&#x627;&#x644;&#x629; 401&#x60C; &#x623;&#x648; &#x644;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x623;&#x64A; &#x634;&#x64A;&#x621; &#x622;&#x62E;&#x631; &#x646;&#x631;&#x64A;&#x62F;&#x647;.</p>
+<blockquote>
+<b>&#x645;&#x644;&#x627;&#x62D;&#x638;&#x629;</b><br>
+&#x623;&#x642;&#x631;&#x623; &#x627;&#x644;&#x645;&#x632;&#x64A;&#x62F; &#x62D;&#x648;&#x644; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x625;&#x636;&#x627;&#x641;&#x629; Flask-Login &#x641;&#x64A; <a href="http://flask-login.readthedocs.org/en/latest/" target="_blank">&#x627;&#x644;&#x62A;&#x648;&#x62B;&#x64A;&#x642;&#x627;&#x62A; &#x627;&#x644;&#x631;&#x633;&#x645;&#x64A;&#x629;</a> &#x644;&#x647;&#x627;.
+</blockquote>
+
+<h3 id="&#x627;&#x644;&#x62A;&#x62E;&#x632;&#x64A;&#x646;-&#x627;&#x644;&#x645;&#x624;&#x642;&#x62A;">&#x627;&#x644;&#x62A;&#x62E;&#x632;&#x64A;&#x646; &#x627;&#x644;&#x645;&#x624;&#x642;&#x62A;</h3>
+<p>&#x62A;&#x62E;&#x64A;&#x644; &#x623;&#x646; &#x645;&#x642;&#x627;&#x644;&#x629; &#x645;&#x627; &#x630;&#x643;&#x631;&#x62A; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x627;&#x64B; &#x644;&#x643; &#x648;&#x646;&#x64F;&#x634;&#x631;&#x64E;&#x62A; &#x639;&#x644;&#x649; &#x645;&#x648;&#x642;&#x639; CNN &#x648;&#x628;&#x639;&#x636; &#x627;&#x644;&#x645;&#x648;&#x627;&#x642;&#x639; &#x627;&#x644;&#x625;&#x62E;&#x628;&#x627;&#x631;&#x64A;&#x629; &#x627;&#x644;&#x623;&#x62E;&#x631;&#x649;. &#x633;&#x62A;&#x62D;&#x635;&#x644; &#x639;&#x644;&#x649; &#x622;&#x644;&#x627;&#x641; &#x627;&#x644;&#x632;&#x64A;&#x627;&#x631;&#x627;&#x62A; &#x641;&#x64A; &#x643;&#x644; &#x62B;&#x627;&#x646;&#x64A;&#x629;. &#x648;&#x628;&#x645;&#x627; &#x623;&#x646; &#x627;&#x644;&#x635;&#x641;&#x62D;&#x629; &#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A;&#x629; &#x641;&#x64A; &#x627;&#x644;&#x645;&#x648;&#x642;&#x639; &#x62A;&#x642;&#x648;&#x645; &#x628;&#x639;&#x62F;&#x629; &#x627;&#x633;&#x62A;&#x639;&#x644;&#x627;&#x645;&#x627;&#x62A; &#x641;&#x64A; &#x642;&#x627;&#x639;&#x62F;&#x629; &#x627;&#x644;&#x628;&#x64A;&#x627;&#x646;&#x627;&#x62A; &#x641;&#x64A; &#x643;&#x644; &#x632;&#x64A;&#x627;&#x631;&#x629;&#x60C; &#x633;&#x64A;&#x624;&#x62F;&#x64A; &#x647;&#x630;&#x627; &#x625;&#x644;&#x649; &#x625;&#x628;&#x637;&#x627;&#x621; &#x627;&#x644;&#x645;&#x648;&#x642;&#x639;. &#x641;&#x643;&#x64A;&#x641; &#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x62A;&#x633;&#x631;&#x64A;&#x639; &#x627;&#x644;&#x623;&#x634;&#x64A;&#x627;&#x621; &#x639;&#x646;&#x62F;&#x647;&#x627;&#x60C; &#x62D;&#x62A;&#x649; &#x644;&#x627; &#x64A;&#x62A;&#x631;&#x643; &#x643;&#x644; &#x647;&#x624;&#x644;&#x627;&#x621; &#x627;&#x644;&#x632;&#x648;&#x627;&#x631; &#x645;&#x648;&#x642;&#x639;&#x646;&#x627;&#x61F;</p>
+<p>&#x64A;&#x648;&#x62C;&#x62F; &#x627;&#x644;&#x639;&#x62F;&#x64A;&#x62F; &#x645;&#x646; &#x627;&#x644;&#x625;&#x62C;&#x627;&#x628;&#x627;&#x62A; &#x627;&#x644;&#x62C;&#x64A;&#x62F;&#x629;&#x60C; &#x648;&#x644;&#x643;&#x646; &#x647;&#x630;&#x627; &#x627;&#x644;&#x642;&#x633;&#x645; &#x647;&#x648; &#x62D;&#x648;&#x644; &#x627;&#x644;&#x62A;&#x62E;&#x632;&#x64A;&#x646; &#x627;&#x644;&#x645;&#x624;&#x642;&#x62A;&#x60C; &#x644;&#x630;&#x627; &#x62F;&#x639;&#x646;&#x627; &#x646;&#x62A;&#x62D;&#x62F;&#x62B; &#x639;&#x646;&#x647;. &#x633;&#x646;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x625;&#x636;&#x627;&#x641;&#x629; <a href="http://pythonhosted.org/Flask-Cache/" target="_blank">Flask-Cache</a> &#x644;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x630;&#x644;&#x643;. &#x62A;&#x648;&#x641;&#x631; &#x644;&#x646;&#x627; &#x647;&#x630;&#x647; &#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; &#x64A;&#x64F;&#x645;&#x643;&#x646; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645;&#x647; &#x639;&#x644;&#x649; &#x635;&#x641;&#x62D;&#x62A;&#x646;&#x627; &#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A;&#x629; &#x644;&#x62A;&#x62E;&#x632;&#x64A;&#x646; &#x627;&#x644;&#x627;&#x633;&#x62A;&#x62C;&#x627;&#x628;&#x629; &#x644;&#x641;&#x62A;&#x631;&#x629; &#x645;&#x646; &#x627;&#x644;&#x632;&#x645;&#x646;.</p>
+<p>&#x64A;&#x64F;&#x645;&#x643;&#x646; &#x623;&#x646; &#x64A;&#x62A;&#x645; &#x625;&#x639;&#x62F;&#x627;&#x62F; &#x647;&#x630;&#x647; &#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x645;&#x639; &#x628;&#x627;&#x642;&#x629; &#x645;&#x646; &#x642;&#x648;&#x627;&#x639;&#x62F; &#x628;&#x64A;&#x627;&#x646;&#x627;&#x62A; &#x627;&#x644;&#x62A;&#x62E;&#x632;&#x64A;&#x646; &#x627;&#x644;&#x645;&#x624;&#x642;&#x62A; &#x627;&#x644;&#x645;&#x62E;&#x62A;&#x644;&#x641;&#x629;. &#x627;&#x644;&#x62E;&#x64A;&#x627;&#x631; &#x627;&#x644;&#x634;&#x639;&#x628;&#x64A; &#x647;&#x648; <a href="http://redis.io/" target="_blank">Redis</a>&#x60C; &#x648;&#x627;&#x644;&#x630;&#x64A; &#x647;&#x648; &#x633;&#x647;&#x644; &#x627;&#x644;&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x648;&#x627;&#x644;&#x62A;&#x62B;&#x628;&#x64A;&#x62A;. &#x644;&#x646;&#x641;&#x62A;&#x631;&#x636; &#x623;&#x646; &#x625;&#x636;&#x627;&#x641;&#x629; Flask-Cache &#x62A;&#x645; &#x625;&#x639;&#x62F;&#x627;&#x62F;&#x647;&#x627; &#x628;&#x627;&#x644;&#x641;&#x639;&#x644;&#x60C; &#x62A;&#x64F;&#x638;&#x647;&#x650;&#x631; &#x627;&#x644;&#x62A;&#x639;&#x644;&#x64A;&#x645;&#x627;&#x62A; &#x627;&#x644;&#x628;&#x631;&#x645;&#x62C;&#x64A;&#x629; &#x623;&#x62F;&#x646;&#x627;&#x647; &#x643;&#x64A;&#x641; &#x633;&#x62A;&#x628;&#x62F;&#x648; &#x637;&#x631;&#x64A;&#x642;&#x629; &#x627;&#x644;&#x639;&#x631;&#x636; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x64E;&#x641;&#x650;&#x629; &#x62E;&#x627;&#x635;&#x62A;&#x646;&#x627;.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># app.py &#x645;&#x644;&#x641;</span>
+
+<span class="hljs-keyword">from</span> flask_cache <span class="hljs-keyword">import</span> Cache
+<span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask
+
+app = Flask()
+
+<span class="hljs-comment"># &#x633;&#x646;&#x642;&#x648;&#x645; &#x647;&#x646;&#x627; &#x628;&#x625;&#x636;&#x627;&#x641;&#x629; &#x627;&#x644;&#x625;&#x639;&#x62F;&#x627;&#x62F;&#x627;&#x62A; &#x627;&#x644;&#x62A;&#x64A; &#x646;&#x631;&#x64A;&#x62F;&#x647;&#x627; &#x62E;&#x644;&#x627;&#x644; &#x627;&#x644;&#x627;&#x633;&#x62A;&#x62F;&#x639;&#x627;&#x621;</span>
+cache = Cache(app)
+
+<span class="hljs-meta">@app.route(&apos;/&apos;)</span>
+<span class="hljs-meta">@cache.cached(timeout=60)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">index</span><span class="hljs-params">()</span>:</span>
+    [...] <span class="hljs-comment"># &#x647;&#x646;&#x627; &#x64A;&#x62A;&#x645; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x628;&#x639;&#x636; &#x639;&#x645;&#x644;&#x64A;&#x627;&#x62A; &#x627;&#x644;&#x627;&#x633;&#x62A;&#x639;&#x644;&#x627;&#x645; &#x627;&#x644;&#x62A;&#x64A; &#x646;&#x62D;&#x62A;&#x627;&#x62C;&#x647;&#x627;</span>
+    <span class="hljs-keyword">return</span> render_template(
+        <span class="hljs-string">&apos;index.html&apos;</span>,
+        latest_posts=latest_posts,
+        recent_users=recent_users,
+        recent_photos=recent_photos
+    )
+</code></pre>
+<p>&#x627;&#x644;&#x622;&#x646;&#x60C; &#x633;&#x62A;&#x639;&#x645;&#x644; &#x627;&#x644;&#x62F;&#x627;&#x644;&#x629; &#x641;&#x642;&#x637; &#x643;&#x644; &#x633;&#x62A;&#x64A;&#x646; &#x62B;&#x627;&#x646;&#x64A;&#x629; (&#x639;&#x646;&#x62F;&#x645;&#x627; &#x62A;&#x646;&#x62A;&#x647;&#x64A; &#x645;&#x62F;&#x629; &#x627;&#x644;&#x62A;&#x62E;&#x632;&#x64A;&#x646;). &#x633;&#x64A;&#x62A;&#x645; &#x62D;&#x641;&#x638; &#x627;&#x644;&#x631;&#x62F; &#x641;&#x64A; &#x630;&#x627;&#x643;&#x631;&#x629; &#x627;&#x644;&#x62A;&#x62E;&#x632;&#x64A;&#x646; &#x627;&#x644;&#x645;&#x624;&#x642;&#x62A; &#x648;&#x639;&#x631;&#x636;&#x647; &#x639;&#x646;&#x62F;&#x645;&#x627; &#x62A;&#x637;&#x631;&#x623; &#x623;&#x64A;&#x629; &#x637;&#x644;&#x628;&#x627;&#x62A; (&#x632;&#x64A;&#x627;&#x631;&#x627;&#x62A; &#x644;&#x644;&#x635;&#x641;&#x62D;&#x629;).</p>
+<blockquote>
+<b>&#x645;&#x644;&#x627;&#x62D;&#x638;&#x629;</b><br>
+&#x62A;&#x648;&#x641;&#x631; &#x644;&#x646;&#x627; &#x647;&#x630;&#x647; &#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x623;&#x64A;&#x636;&#x627;&#x64B; &#x62E;&#x627;&#x635;&#x64A;&#x629; &#x644;&#x62D;&#x641;&#x638; &#x627;&#x644;&#x62F;&#x648;&#x627;&#x644;&#x60C; &#x623;&#x648; &#x628;&#x645;&#x639;&#x646;&#x649; &#x622;&#x62E;&#x631;&#x60C; &#x62A;&#x62E;&#x632;&#x64A;&#x646; &#x646;&#x62A;&#x64A;&#x62C;&#x629; &#x62F;&#x627;&#x644;&#x629; &#x64A;&#x62A;&#x645; &#x627;&#x633;&#x62A;&#x62F;&#x639;&#x627;&#x621;&#x647;&#x627; &#x628;&#x645;&#x639;&#x627;&#x645;&#x644;&#x627;&#x62A; &#x645;&#x62D;&#x62F;&#x62F;&#x629;. &#x64A;&#x645;&#x643;&#x646;&#x643; &#x62D;&#x62A;&#x649; &#x62A;&#x62E;&#x632;&#x64A;&#x646; &#x642;&#x648;&#x627;&#x644;&#x628; &#x62C;&#x64A;&#x646;&#x62C;&#x627;.
+</blockquote>
+
+<h2 id="&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A;-&#x645;&#x64F;&#x62E;&#x635;&#x635;&#x629;">&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A; &#x645;&#x64F;&#x62E;&#x635;&#x635;&#x629;</h2>
+<p>&#x62F;&#x639;&#x646;&#x627; &#x646;&#x62A;&#x62E;&#x64A;&#x644; &#x623;&#x646;&#x643; &#x62A;&#x645;&#x644;&#x643; &#x62A;&#x637;&#x628;&#x64A;&#x642; &#x64A;&#x641;&#x631;&#x636; &#x631;&#x633;&#x648;&#x645;&#x627;&#x64B; &#x639;&#x644;&#x649; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645;&#x64A;&#x646; &#x643;&#x644; &#x634;&#x647;&#x631;. &#x625;&#x630;&#x627; &#x623;&#x646;&#x62A;&#x647;&#x62A; &#x635;&#x644;&#x627;&#x62D;&#x64A;&#x629; &#x62D;&#x633;&#x627;&#x628; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645;&#x60C; &#x633;&#x646;&#x642;&#x648;&#x645; &#x628;&#x62A;&#x648;&#x62C;&#x64A;&#x647;&#x647; &#x625;&#x644;&#x649; &#x635;&#x641;&#x62D;&#x629; &#x627;&#x644;&#x62F;&#x641;&#x639; &#x648;&#x646;&#x639;&#x644;&#x645;&#x647; &#x623;&#x646;&#x647; &#x639;&#x644;&#x64A;&#x643; &#x62A;&#x631;&#x642;&#x64A;&#x629; &#x62D;&#x633;&#x627;&#x628;&#x647;.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># myapp/util.py &#x645;&#x644;&#x641;</span>
+
+<span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> wraps
+<span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> datetime
+
+<span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> flash, redirect, url_for
+
+<span class="hljs-keyword">from</span> flask_login <span class="hljs-keyword">import</span> current_user
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check_expired</span><span class="hljs-params">(func)</span>:</span>
+<span class="hljs-meta">    @wraps(func)</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">decorated_function</span><span class="hljs-params">(*args, **kwargs)</span>:</span>
+        <span class="hljs-keyword">if</span> datetime.utcnow() &gt; current_user.account_expires:
+            flash(<span class="hljs-string">&quot;Your account has expired. Update your billing info.&quot;</span>)
+            <span class="hljs-keyword">return</span> redirect(url_for(<span class="hljs-string">&apos;account_billing&apos;</span>))
+        <span class="hljs-keyword">return</span> func(*args, **kwargs)
+
+    <span class="hljs-keyword">return</span> decorated_function
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x627;&#x644;&#x633;&#x637;&#x631;</th>
+<th>&#x627;&#x644;&#x634;&#x631;&#x62D;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>&#x639;&#x646;&#x62F;&#x645;&#x627; &#x64A;&#x62A;&#x645; &#x632;&#x62E;&#x631;&#x641;&#x629; &#x62F;&#x627;&#x644;&#x629; &#x628;&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; <code>check_expired@</code>&#x60C; &#x633;&#x64A;&#x62A;&#x645; &#x627;&#x633;&#x62A;&#x62F;&#x639;&#x627;&#x621; <code>()check_expired</code> &#x648;&#x633;&#x62A;&#x645;&#x631;&#x631; &#x627;&#x644;&#x62F;&#x627;&#x644;&#x629; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x64E;&#x641;&#x650;&#x629; &#x643;&#x645;&#x639;&#x627;&#x645;&#x644;.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>&#x64A;&#x648;&#x62C;&#x62F; &#x641;&#x64A; &#x647;&#x630;&#x627; &#x627;&#x644;&#x633;&#x637;&#x631; &#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; (<code>warp@</code>) &#x64A;&#x642;&#x648;&#x645; &#x628;&#x628;&#x639;&#x636; &#x623;&#x639;&#x645;&#x627;&#x644; &#x627;&#x644;&#x645;&#x631;&#x627;&#x642;&#x628;&#x629; &#x62D;&#x62A;&#x649; &#x62A;&#x628;&#x62F;&#x648; &#x627;&#x644;&#x62F;&#x627;&#x644;&#x629; <code>()decorated_function</code> &#x643;&#x627;&#x644;&#x62F;&#x627;&#x644;&#x629; <code>()func</code> &#xFEF7;&#x63A;&#x631;&#x627;&#x636; &#x62A;&#x648;&#x62B;&#x64A;&#x642;&#x64A;&#x629; &#x648;&#x62A;&#x646;&#x642;&#x64A;&#x62D;&#x64A;&#x629;. &#x647;&#x630;&#x627; &#x64A;&#x62C;&#x639;&#x644; &#x645;&#x646; &#x633;&#x644;&#x648;&#x643; &#x627;&#x644;&#x62F;&#x627;&#x644;&#x629; &#x623;&#x643;&#x62B;&#x631; &#x637;&#x628;&#x64A;&#x639;&#x64A;&#x629;&#x64B; &#x628;&#x642;&#x644;&#x64A;&#x644;.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>&#x633;&#x62A;&#x642;&#x648;&#x645; &#x627;&#x644;&#x62F;&#x627;&#x644;&#x629; <code>decorated_function</code> &#x628;&#x62C;&#x645;&#x639; &#x643;&#x644; &#x627;&#x644;&#x645;&#x639;&#x627;&#x645;&#x644;&#x627;&#x62A; &#x627;&#x644;&#x645;&#x641;&#x62A;&#x627;&#x62D;&#x64A;&#x629; (kwargs) &#x648;&#x627;&#x644;&#x645;&#x639;&#x627;&#x645;&#x644;&#x627;&#x62A; &#x627;&#x644;&#x635;&#x641;&#x64A;&#x651;&#x629; (args) &#x627;&#x644;&#x645;&#x64F;&#x645;&#x631;&#x631;&#x629; &#x644;&#x62F;&#x627;&#x644;&#x629; &#x627;&#x644;&#x639;&#x631;&#x636; &#x627;&#x644;&#x623;&#x635;&#x644;&#x64A;&#x651;&#x629; <code>()func</code>. &#x641;&#x64A; &#x647;&#x630;&#x627; &#x627;&#x644;&#x633;&#x637;&#x631; &#x633;&#x646;&#x642;&#x648;&#x645; &#x628;&#x627;&#x644;&#x62A;&#x623;&#x643;&#x62F; &#x625;&#x630;&#x627; &#x643;&#x627;&#x646; &#x62D;&#x633;&#x627;&#x628; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x645;&#x64F;&#x646;&#x62A;&#x647;&#x64A; &#x627;&#x644;&#x635;&#x644;&#x627;&#x62D;&#x64A;&#x629;. &#x625;&#x630;&#x627; &#x643;&#x627;&#x646; &#x643;&#x630;&#x644;&#x643;&#x60C; &#x633;&#x646;&#x631;&#x633;&#x644; &#x631;&#x633;&#x627;&#x644;&#x629; &#x644;&#x647; &#x648;&#x646;&#x642;&#x648;&#x645; &#x628;&#x625;&#x639;&#x627;&#x62F;&#x629; &#x62A;&#x648;&#x62C;&#x64A;&#x647;&#x647; &#x625;&#x644;&#x649; &#x635;&#x641;&#x62D;&#x629; &#x627;&#x644;&#x62F;&#x641;&#x639;.</td>
+</tr>
+</tbody>
+</table>
+<p>&#x639;&#x646;&#x62F;&#x645;&#x627; &#x646;&#x631;&#x635; (&#x646;&#x64F;&#x643;&#x62F;&#x650;&#x633;) &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A;&#x60C; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; &#x627;&#x644;&#x623;&#x639;&#x644;&#x649; (&#x627;&#x644;&#x630;&#x64A; &#x641;&#x64A; &#x627;&#x644;&#x645;&#x642;&#x62F;&#x645;&#x629;) &#x647;&#x648; &#x645;&#x646; &#x64A;&#x639;&#x645;&#x644; &#x623;&#x648;&#x644;&#x627;&#x64B;&#x60C; &#x648;&#x645;&#x646; &#x62B;&#x645; &#x64A;&#x642;&#x648;&#x645; &#x628;&#x627;&#x633;&#x62A;&#x62F;&#x639;&#x627;&#x621; &#x627;&#x644;&#x630;&#x64A; &#x64A;&#x644;&#x64A;&#x647; &#x628;&#x627;&#x644;&#x633;&#x637;&#x631;&#x60C; &#x633;&#x648;&#x627;&#x621;&#x64B; &#x643;&#x627;&#x646; &#x62F;&#x627;&#x644;&#x629; &#x639;&#x631;&#x636; &#x623;&#x648; &#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; &#x622;&#x62E;&#x631;. &#x627;&#x644;&#x635;&#x64A;&#x63A;&#x629; &#x627;&#x644;&#x643;&#x62A;&#x627;&#x628;&#x64A;&#x629; &#x644;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A; &#x62A;&#x62D;&#x648;&#x64A; &#x627;&#x644;&#x642;&#x644;&#x64A;&#x644; &#x645;&#x646; &#x627;&#x644;&#x62A;&#x62C;&#x645;&#x64A;&#x644; &#x627;&#x644;&#x644;&#x63A;&#x648;&#x64A; (&#x623;&#x642;&#x631;&#x623; &#x627;&#x644;&#x645;&#x632;&#x64A;&#x62F; &#x639;&#x646; <a href="https://ar.wikipedia.org/wiki/&#x627;&#x644;&#x62A;&#x62C;&#x645;&#x64A;&#x644;_&#x627;&#x644;&#x644;&#x63A;&#x648;&#x64A;" target="_blank">&#x627;&#x644;&#x62A;&#x62C;&#x645;&#x64A;&#x644; &#x627;&#x644;&#x644;&#x63A;&#x648;&#x64A;</a>).</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x647;&#x630;&#x647; &#x627;&#x644;&#x62A;&#x639;&#x644;&#x64A;&#x645;&#x627;&#x62A; &#x627;&#x644;&#x628;&#x631;&#x645;&#x62C;&#x64A;&#x629;:</span>
+<span class="hljs-meta">@foo</span>
+<span class="hljs-meta">@bar</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">one</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">pass</span>
+
+r1 = one()
+
+<span class="hljs-comment"># &#x647;&#x644; &#x647;&#x630;&#x647; &#x646;&#x641;&#x633; &#x627;&#x644;&#x62A;&#x639;&#x644;&#x64A;&#x645;&#x629;:</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">two</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">pass</span>
+
+two = foo(bar(two))
+r2 = two()
+
+r1 == r2 <span class="hljs-comment"># &#x627;&#x644;&#x646;&#x62A;&#x64A;&#x62C;&#x629; &#x633;&#x62A;&#x643;&#x648;&#x646; &#x635;&#x62D;&#x64A;&#x62D;&#x629; &#x645;&#x646;&#x637;&#x642;&#x64A;&#x627;&#x64B; (True)</span>
+</code></pre>
+<p>&#x627;&#x644;&#x634;&#x64A;&#x641;&#x631;&#x629; &#x623;&#x62F;&#x646;&#x627;&#x647; &#x62A;&#x639;&#x631;&#x636; &#x645;&#x62B;&#x627;&#x644; &#x62D;&#x648;&#x644; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; &#x627;&#x644;&#x645;&#x62E;&#x635;&#x635; &#x627;&#x644;&#x630;&#x64A; &#x642;&#x645;&#x646;&#x627; &#x628;&#x625;&#x646;&#x634;&#x627;&#x626;&#x647; &#x645;&#x639; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; <code>login_required@</code> &#x645;&#x646; &#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; Flask-Login. &#x646;&#x633;&#x62A;&#x637;&#x64A;&#x639; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x643;&#x644;&#x627; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x64A;&#x646; &#x639;&#x646; &#x637;&#x631;&#x64A;&#x642; &#x631;&#x635;&#x647;&#x645; (&#x62A;&#x643;&#x62F;&#x64A;&#x633;&#x647;&#x645;).</p>
+<pre><code class="lang-python"><span class="hljs-comment"># myapp/views.py &#x645;&#x644;&#x641;</span>
+
+<span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> render_template
+
+<span class="hljs-keyword">from</span> flask_login <span class="hljs-keyword">import</span> login_required
+
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> app
+<span class="hljs-keyword">from</span> .util <span class="hljs-keyword">import</span> check_expired
+
+<span class="hljs-meta">@app.route(&apos;/use_app&apos;)</span>
+<span class="hljs-meta">@login_required</span>
+<span class="hljs-meta">@check_expired</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">use_app</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;Use our amazing app.&quot;&quot;&quot;</span>
+    <span class="hljs-comment"># [...]</span>
+    <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">&apos;use_app.html&apos;</span>)
+
+<span class="hljs-meta">@app.route(&apos;/account/billing&apos;)</span>
+<span class="hljs-meta">@login_required</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">account_billing</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;Update your billing info.&quot;&quot;&quot;</span>
+    <span class="hljs-comment"># [...]</span>
+    <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">&apos;account/billing.html&apos;</span>)
+</code></pre>
+<p>&#x639;&#x646;&#x62F;&#x645;&#x627; &#x64A;&#x62D;&#x627;&#x648;&#x644; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x627;&#xFEF5;&#x646; &#x627;&#x644;&#x62F;&#x62E;&#x648;&#x644; &#x625;&#x644;&#x649; <em>use_app/</em>&#x60C; &#x633;&#x64A;&#x62A;&#x623;&#x643;&#x62F; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; <code>()check_expired</code> &#x642;&#x628;&#x644; &#x62A;&#x634;&#x63A;&#x64A;&#x644; &#x62F;&#x627;&#x644;&#x629; &#x627;&#x644;&#x639;&#x631;&#x636; &#x623;&#x646; &#x62D;&#x633;&#x627;&#x628; &#x647;&#x630;&#x627; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x63A;&#x64A;&#x631; &#x645;&#x646;&#x62A;&#x647;&#x64A; &#x627;&#x644;&#x635;&#x644;&#x627;&#x62D;&#x64A;&#x629;.</p>
+<blockquote>
+<b>&#x645;&#x644;&#x627;&#x62D;&#x638;&#x629;</b><br>
+&#x623;&#x642;&#x631;&#x623; &#x627;&#x644;&#x645;&#x632;&#x64A;&#x62F; &#x62D;&#x648;&#x644; &#x645;&#x627; &#x62A;&#x642;&#x648;&#x645; &#x628;&#x647; &#x627;&#x644;&#x62F;&#x627;&#x644;&#x629; <code>()warps</code> <a href="http://docs.python.org/2/library/functools.html#functools.wraps" target="_blank">&#x641;&#x64A; &#x62A;&#x648;&#x62B;&#x64A;&#x642;&#x627;&#x62A; &#x628;&#x627;&#x64A;&#x62B;&#x648;&#x646;</a>.
+</blockquote>
+
+<h2 id="&#x645;&#x62D;&#x648;&#x644;&#x627;&#x62A;-&#x627;&#x644;&#x631;&#x648;&#x627;&#x628;&#x637;">&#x645;&#x62D;&#x648;&#x644;&#x627;&#x62A; &#x627;&#x644;&#x631;&#x648;&#x627;&#x628;&#x637;</h2>
+<h3 id="&#x627;&#x644;&#x645;&#x62D;&#x648;&#x644;&#x627;&#x62A;-&#x627;&#x644;&#x642;&#x64A;&#x627;&#x633;&#x64A;&#x629;-&#x627;&#x644;&#x645;&#x628;&#x646;&#x64A;&#x629;-&#x641;&#x64A;-&#x627;&#x644;&#x625;&#x637;&#x627;&#x631;">&#x627;&#x644;&#x645;&#x62D;&#x648;&#x644;&#x627;&#x62A; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x633;&#x64A;&#x629; (&#x627;&#x644;&#x645;&#x628;&#x646;&#x64A;&#x629; &#x641;&#x64A; &#x627;&#x644;&#x625;&#x637;&#x627;&#x631;)</h3>
+<p>&#x639;&#x646;&#x62F;&#x645;&#x627; &#x62A;&#x642;&#x648;&#x645; &#x628;&#x62A;&#x639;&#x631;&#x64A;&#x641; &#x645;&#x648;&#x62C;&#x647; &#x628;&#x641;&#x644;&#x627;&#x633;&#x643;&#x60C; &#x64A;&#x645;&#x643;&#x646;&#x643; &#x62A;&#x62D;&#x62F;&#x64A;&#x62F; &#x623;&#x62C;&#x632;&#x627;&#x621; &#x645;&#x646; &#x627;&#x644;&#x631;&#x627;&#x628;&#x637; &#x644;&#x64A;&#x62A;&#x645; &#x62A;&#x62D;&#x648;&#x64A;&#x644;&#x647;&#x627; &#x625;&#x644;&#x649; &#x645;&#x62A;&#x63A;&#x64A;&#x631;&#x627;&#x62A; &#x648;&#x62A;&#x645;&#x631;&#x64A;&#x631;&#x647;&#x627; &#x643;&#x645;&#x639;&#x627;&#x645;&#x644;&#x627;&#x62A; &#x625;&#x644;&#x649; &#x62F;&#x627;&#x644;&#x629; &#x627;&#x644;&#x639;&#x631;&#x636;.</p>
+<pre><code class="lang-python"><span class="hljs-meta">@app.route(&apos;/user/&lt;username&gt;&apos;)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">profile</span><span class="hljs-params">(username)</span>:</span>
+    <span class="hljs-keyword">pass</span>
+</code></pre>
+<p>&#x623;&#x64A; &#x634;&#x64A;&#x621; &#x633;&#x64A;&#x62A;&#x645; &#x643;&#x62A;&#x627;&#x628;&#x62A;&#x647; &#x645;&#x643;&#x627;&#x646; &#x627;&#x644;&#x62C;&#x632;&#x621; &#x641;&#x64A; &#x627;&#x644;&#x639;&#x646;&#x648;&#x627;&#x646; &#x627;&#x644;&#x645;&#x633;&#x645;&#x649; &#x628; <code>&lt;username&gt;</code> &#x633;&#x64A;&#x62A;&#x645; &#x62A;&#x645;&#x631;&#x64A;&#x631;&#x647; &#x625;&#x644;&#x649; &#x62F;&#x627;&#x644;&#x629; &#x627;&#x644;&#x639;&#x631;&#x636; &#x643;&#x645;&#x639;&#x627;&#x645;&#x644; &#x64A;&#x633;&#x645;&#x649; <code>username</code>. &#x64A;&#x645;&#x643;&#x646;&#x643; &#x623;&#x64A;&#x636;&#x627;&#x64B; &#x62A;&#x62D;&#x62F;&#x64A;&#x62F; &#x645;&#x62D;&#x648;&#x644; &#x644;&#x62A;&#x635;&#x641;&#x64A;&#x629; (&#x62A;&#x62D;&#x648;&#x64A;&#x644; &#x642;&#x64A;&#x645;&#x629;) &#x627;&#x644;&#x645;&#x62A;&#x63A;&#x64A;&#x631; &#x642;&#x628;&#x644; &#x62A;&#x645;&#x631;&#x64A;&#x631;&#x647; &#x625;&#x644;&#x649; &#x62F;&#x627;&#x644;&#x629; &#x627;&#x644;&#x639;&#x631;&#x636;.</p>
+<pre><code class="lang-python"><span class="hljs-meta">@app.route(&apos;/user/id/&lt;int:user_id&gt;&apos;)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">profile</span><span class="hljs-params">(user_id)</span>:</span>
+    <span class="hljs-keyword">pass</span>
+</code></pre>
+<p>&#x641;&#x64A; &#x627;&#x644;&#x634;&#x64A;&#x641;&#x631;&#x629; &#x623;&#x639;&#x644;&#x627;&#x647;&#x60C; &#x627;&#x644;&#x62F;&#x62E;&#x648;&#x644; &#x625;&#x644;&#x649; &#x627;&#x644;&#x639;&#x646;&#x648;&#x627;&#x646; <em><a href="http://myapp.com/user/id/Q29kZUxlc3NvbiEh" target="_blank">http://myapp.com/user/id/Q29kZUxlc3NvbiEh</a></em> &#x633;&#x64A;&#x639;&#x64A;&#x62F; &#x631;&#x645;&#x632; &#x627;&#x644;&#x62D;&#x627;&#x644;&#x629; 404 (&#x623;&#x64A; &#x627;&#x644;&#x635;&#x641;&#x62D;&#x629; &#x63A;&#x64A;&#x631; &#x645;&#x648;&#x62C;&#x648;&#x62F;&#x629;). &#x647;&#x630;&#x627; &#x644;&#x623;&#x646; &#x627;&#x644;&#x62C;&#x632;&#x621; &#x627;&#x644;&#x623;&#x62E;&#x64A;&#x631; &#x645;&#x646; &#x627;&#x644;&#x631;&#x627;&#x628;&#x637; &#x627;&#x644;&#x630;&#x64A; &#x643;&#x627;&#x646; &#x645;&#x646; &#x627;&#x644;&#x645;&#x641;&#x62A;&#x631;&#x636; &#x623;&#x646; &#x64A;&#x643;&#x648;&#x646; &#x631;&#x642;&#x645;&#x627;&#x64B; &#x635;&#x62D;&#x64A;&#x62D;&#x627;&#x64B; &#x62A;&#x645; &#x625;&#x62F;&#x62E;&#x627;&#x644; &#x645;&#x643;&#x627;&#x646;&#x647; &#x633;&#x644;&#x633;&#x644;&#x629; &#x646;&#x635;&#x64A;&#x629;.</p>
+<p>&#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x623;&#x64A;&#x636;&#x627;&#x64B; &#x62A;&#x639;&#x631;&#x64A;&#x641; &#x62F;&#x627;&#x644;&#x629; &#x639;&#x631;&#x636; &#x623;&#x62E;&#x631;&#x649; &#x62A;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x645;&#x64F;&#x646;&#x642;&#x650;&#x62D; &#x64A;&#x628;&#x62D;&#x62B; &#x639;&#x646; &#x633;&#x644;&#x633;&#x644;&#x629; &#x646;&#x635;&#x64A;&#x651;&#x629;.</p>
+<p>&#x64A;&#x638;&#x647;&#x631; &#x627;&#x644;&#x62C;&#x62F;&#x648;&#x644; &#x623;&#x62F;&#x646;&#x627;&#x647; &#x645;&#x62D;&#x648;&#x644;&#x627;&#x62A; &#x627;&#x644;&#x631;&#x648;&#x627;&#x628;&#x637; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x633;&#x64A;&#x629; &#x627;&#x644;&#x645;&#x648;&#x62C;&#x648;&#x62F;&#x629; &#x641;&#x64A; &#x625;&#x637;&#x627;&#x631; &#x641;&#x644;&#x627;&#x633;&#x643;.</p>
+<table>
+<thead>
+<tr>
+<th>&#x627;&#x644;&#x645;&#x62D;&#x648;&#x644;</th>
+<th>&#x627;&#x644;&#x634;&#x631;&#x62D;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td>&#x64A;&#x642;&#x628;&#x644; &#x623;&#x64A; &#x645;&#x64F;&#x62F;&#x62E;&#x644; &#x646;&#x635;&#x64A; &#x628;&#x62F;&#x648;&#x646; &#x645;&#x627;&#x626;&#x644;&#x629; (&#x627;&#x644;&#x645;&#x62D;&#x648;&#x644; &#x627;&#x644;&#x625;&#x641;&#x62A;&#x631;&#x627;&#x636;&#x64A;).</td>
+</tr>
+<tr>
+<td>int</td>
+<td>&#x64A;&#x642;&#x628;&#x644; &#x627;&#x644;&#x623;&#x639;&#x62F;&#x627;&#x62F; &#x627;&#x644;&#x635;&#x62D;&#x64A;&#x62D;&#x629;.</td>
+</tr>
+<tr>
+<td>float</td>
+<td>&#x645;&#x62B;&#x644; &#x627;&#x644;&#x645;&#x62D;&#x648;&#x644; int &#x648;&#x644;&#x643;&#x646;&#x647; &#x64A;&#x642;&#x628;&#x644; &#x627;&#x644;&#x642;&#x64A;&#x645; &#x630;&#x627;&#x62A; &#x627;&#x644;&#x641;&#x627;&#x635;&#x644;&#x629; &#x627;&#x644;&#x639;&#x634;&#x631;&#x64A;&#x629;.</td>
+</tr>
+<tr>
+<td>path</td>
+<td>&#x645;&#x62B;&#x644; &#x627;&#x644;&#x645;&#x62D;&#x648;&#x644; string &#x648;&#x644;&#x643;&#x646;&#x647; &#x64A;&#x642;&#x628;&#x644; &#x627;&#x644;&#x645;&#x627;&#x626;&#x644;&#x629;.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x645;&#x62D;&#x648;&#x644;&#x627;&#x62A;-&#x645;&#x62E;&#x635;&#x635;&#x629;">&#x645;&#x62D;&#x648;&#x644;&#x627;&#x62A; &#x645;&#x62E;&#x635;&#x635;&#x629;</h3>
+<p>&#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x623;&#x64A;&#x636;&#x627;&#x64B; &#x635;&#x646;&#x639; &#x645;&#x62D;&#x648;&#x644;&#x627;&#x62A; &#x62E;&#x627;&#x635;&#x629; &#x644;&#x62A;&#x646;&#x627;&#x633;&#x628; &#x627;&#x62D;&#x62A;&#x64A;&#x627;&#x62C;&#x627;&#x62A;&#x646;&#x627;. &#x639;&#x644;&#x649; &#x645;&#x648;&#x642;&#x639; &#x631;&#x64A;&#x62F;&#x64A;&#x62A; (&#x645;&#x648;&#x642;&#x639; &#x645;&#x634;&#x647;&#x648;&#x631; &#x644;&#x645;&#x634;&#x627;&#x631;&#x643;&#x629; &#x627;&#x644;&#x631;&#x648;&#x627;&#x628;&#x637;) &#x64A;&#x635;&#x646;&#x639; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645;&#x648;&#x646; &#x648;&#x627;&#x644;&#x645;&#x62F;&#x631;&#x627;&#x621; &#x645;&#x62C;&#x62A;&#x645;&#x639;&#x627;&#x62A; &#x644;&#x644;&#x645;&#x646;&#x627;&#x642;&#x634;&#x629; &#x648;&#x645;&#x634;&#x627;&#x631;&#x643;&#x629; &#x627;&#x644;&#x631;&#x648;&#x627;&#x628;&#x637; &#x628;&#x646;&#x627;&#x621;&#x64B; &#x639;&#x644;&#x649; &#x627;&#x644;&#x645;&#x648;&#x636;&#x648;&#x639;. &#x628;&#x639;&#x636; &#x627;&#x644;&#x623;&#x645;&#x62B;&#x644;&#x629; &#x62D;&#x648;&#x644; &#x631;&#x648;&#x627;&#x628;&#x637; &#x627;&#x644;&#x645;&#x62C;&#x62A;&#x645;&#x639;&#x627;&#x62A; r/python/ &#x648; r/flask/. &#x64A;&#x648;&#x62C;&#x62F; &#x645;&#x64A;&#x632;&#x629; &#x645;&#x62B;&#x64A;&#x631;&#x629; &#x641;&#x64A; &#x647;&#x630;&#x627; &#x627;&#x644;&#x645;&#x648;&#x642;&#x639; &#x648;&#x647;&#x64A; &#x623;&#x646;&#x647; &#x64A;&#x645;&#x643;&#x646;&#x643; &#x639;&#x631;&#x636; &#x645;&#x646;&#x634;&#x648;&#x631;&#x627;&#x62A; &#x645;&#x646; &#x645;&#x62C;&#x62A;&#x645;&#x639;&#x64A;&#x646; &#x645;&#x62E;&#x62A;&#x644;&#x641;&#x64A;&#x646; &#x639;&#x646; &#x637;&#x631;&#x64A;&#x642; &#x627;&#x644;&#x641;&#x635;&#x644; &#x628;&#x64A;&#x646; &#x623;&#x633;&#x645;&#x627;&#x621; &#x627;&#x644;&#x645;&#x62C;&#x62A;&#x645;&#x639;&#x627;&#x62A; &#x628;&#x625;&#x634;&#x627;&#x631;&#x629; &#x645;&#x633;&#x627;&#x648;&#x627;&#x629; &#x641;&#x64A; &#x627;&#x644;&#x631;&#x627;&#x628;&#x637;&#x60C; &#x639;&#x644;&#x649; &#x633;&#x628;&#x64A;&#x644; &#x627;&#x644;&#x645;&#x62B;&#x627;&#x644;: <em>reddit.com/r/python+flask</em>.</p>
+<p>&#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x645;&#x62D;&#x648;&#x644; &#x645;&#x62E;&#x635;&#x635; &#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x647;&#x630;&#x647; &#x627;&#x644;&#x645;&#x64A;&#x632;&#x629; &#x625;&#x644;&#x649; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x646;&#x627;. &#x633;&#x646;&#x623;&#x62E;&#x630; &#x639;&#x62F;&#x62F;&#x627;&#x64B; &#x639;&#x634;&#x648;&#x627;&#x626;&#x64A;&#x627;&#x64B; &#x645;&#x646; &#x627;&#x644;&#x639;&#x646;&#x627;&#x635;&#x631; &#x627;&#x644;&#x645;&#x641;&#x635;&#x648;&#x644;&#x629; &#x628;&#x639;&#x644;&#x627;&#x645;&#x629; &#x632;&#x627;&#x626;&#x62F;&#x60C; &#x648;&#x633;&#x646;&#x642;&#x648;&#x645; &#x628;&#x62A;&#x62D;&#x648;&#x64A;&#x644;&#x647;&#x627; &#x625;&#x644;&#x649; &#x642;&#x627;&#x626;&#x645;&#x629; &#x628;&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x627;&#x644;&#x635;&#x646;&#x641; <code>ListConverter</code> &#x648;&#x633;&#x646;&#x645;&#x631;&#x631; &#x647;&#x630;&#x647; &#x627;&#x644;&#x642;&#x627;&#x626;&#x645;&#x629; &#x625;&#x644;&#x649; &#x62F;&#x627;&#x644;&#x629; &#x627;&#x644;&#x639;&#x631;&#x636;.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># myapp/util.py &#x645;&#x644;&#x641;</span>
+
+<span class="hljs-keyword">from</span> werkzeug.routing <span class="hljs-keyword">import</span> BaseConverter
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListConverter</span><span class="hljs-params">(BaseConverter)</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">to_python</span><span class="hljs-params">(self, value)</span>:</span>
+        <span class="hljs-keyword">return</span> value.split(<span class="hljs-string">&apos;+&apos;</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">to_url</span><span class="hljs-params">(self, values)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;+&apos;</span>.join(BaseConverter.to_url(value)
+                        <span class="hljs-keyword">for</span> value <span class="hljs-keyword">in</span> values)
+</code></pre>
+<p>&#x641;&#x64A; &#x627;&#x644;&#x645;&#x62B;&#x627;&#x644; &#x623;&#x639;&#x644;&#x627;&#x647;&#x60C; &#x642;&#x645;&#x646;&#x627; &#x628;&#x62A;&#x639;&#x631;&#x64A;&#x641; &#x62F;&#x627;&#x644;&#x62A;&#x64A;&#x646; <code>()to_python</code> &#x648; <code>()to_url</code>. &#x643;&#x645;&#x627; &#x64A;&#x634;&#x64A;&#x631; &#x627;&#x644;&#x627;&#x633;&#x645;&#x60C; &#x62A;&#x64F;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x627;&#x644;&#x62F;&#x627;&#x644;&#x629; <code>()to_python</code> &#x644;&#x62A;&#x62D;&#x648;&#x64A;&#x644; &#x627;&#x644;&#x631;&#x627;&#x628;&#x637; &#x625;&#x644;&#x649; &#x643;&#x627;&#x626;&#x646; &#x628;&#x627;&#x64A;&#x62B;&#x648;&#x646; &#x644;&#x64A;&#x62A;&#x645; &#x62A;&#x645;&#x631;&#x64A;&#x631;&#x647; &#x625;&#x644;&#x649; &#x62F;&#x627;&#x644;&#x629; &#x627;&#x644;&#x639;&#x631;&#x636;&#x60C; &#x648;&#x62A;&#x64F;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x627;&#x644;&#x62F;&#x627;&#x644;&#x629; <code>()to_url</code> &#x645;&#x646; &#x642;&#x628;&#x644; <code>()url_for</code> &#x644;&#x62A;&#x62D;&#x648;&#x64A;&#x644; &#x627;&#x644;&#x645;&#x639;&#x627;&#x645;&#x644;&#x627;&#x62A; &#x625;&#x644;&#x649; &#x631;&#x627;&#x628;&#x637;.</p>
+<p>&#x644;&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x627;&#x644;&#x645;&#x62D;&#x648;&#x644; <code>ListConverter</code>&#x60C; &#x639;&#x644;&#x64A;&#x646;&#x627; &#x628;&#x62F;&#x627;&#x64A;&#x629;&#x64B; &#x625;&#x62E;&#x628;&#x627;&#x631; &#x641;&#x644;&#x627;&#x633;&#x643; &#x623;&#x646;&#x647; &#x645;&#x648;&#x62C;&#x648;&#x62F;.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># /myapp/__init__.py &#x645;&#x644;&#x641;</span>
+
+<span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask
+
+app = Flask(__name__)
+
+<span class="hljs-keyword">from</span> .util <span class="hljs-keyword">import</span> ListConverter
+
+app.url_map.converters[<span class="hljs-string">&apos;list&apos;</span>] = ListConverter
+</code></pre>
+<blockquote>
+<b>&#x645;&#x644;&#x627;&#x62D;&#x638;&#x629;</b><br>
+&#x647;&#x646;&#x627;&#x643; &#x625;&#x62D;&#x62A;&#x645;&#x627;&#x644;&#x64A;&#x629; &#x644;&#x644;&#x648;&#x642;&#x648;&#x639; &#x628;&#x628;&#x639;&#x636; &#x645;&#x634;&#x627;&#x643;&#x644; &#x627;&#x644;&#x627;&#x633;&#x62A;&#x64A;&#x631;&#x627;&#x62F; &#x627;&#x644;&#x62D;&#x644;&#x642;&#x64A;&#x629; &#x625;&#x630;&#x627; &#x627;&#x62D;&#x62A;&#x648;&#x649; &#x645;&#x644;&#x641; <code>util</code> &#x62E;&#x627;&#x635;&#x62A;&#x643; &#x639;&#x644;&#x649; &#x627;&#x644;&#x633;&#x637;&#x631; <code>from . import app</code>. &#x644;&#x647;&#x630;&#x627; &#x627;&#x644;&#x633;&#x628;&#x628; &#x627;&#x646;&#x62A;&#x638;&#x631;&#x62A; &#x62D;&#x62A;&#x649; &#x64A;&#x62A;&#x645; &#x627;&#x633;&#x62A;&#x647;&#x644;&#x627;&#x644; &#x627;&#x644;&#x62A;&#x637;&#x628;&#x64A;&#x642; &#x62D;&#x62A;&#x649; &#x623;&#x642;&#x648;&#x645; &#x628;&#x627;&#x633;&#x62A;&#x64A;&#x631;&#x627;&#x62F; <code>ListConverter</code>.
+</blockquote>
+
+<p>&#x627;&#xFEF5;&#x646; &#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x627;&#x644;&#x645;&#x62D;&#x648;&#x644; &#x627;&#x644;&#x630;&#x64A; &#x642;&#x645;&#x646;&#x627; &#x628;&#x625;&#x646;&#x634;&#x627;&#x626;&#x647; &#x628;&#x627;&#x644;&#x637;&#x631;&#x64A;&#x642;&#x629; &#x646;&#x641;&#x633;&#x647;&#x627; &#x627;&#x644;&#x62A;&#x64A; &#x646;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x628;&#x647;&#x627; &#x627;&#x644;&#x645;&#x62D;&#x648;&#x644;&#x627;&#x62A; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x633;&#x64A;&#x629; (&#x627;&#x644;&#x645;&#x628;&#x646;&#x64A;&#x629; &#x641;&#x64A; &#x627;&#x644;&#x625;&#x637;&#x627;&#x631;). &#x642;&#x645;&#x646;&#x627; &#x628;&#x62A;&#x62D;&#x62F;&#x64A;&#x62F; &#x646;&#x648;&#x639; &#x627;&#x644;&#x645;&#x641;&#x62A;&#x627;&#x62D; &#x641;&#x64A; &#x627;&#x644;&#x642;&#x627;&#x645;&#x648;&#x633; &#x639;&#x644;&#x649; &#x623;&#x646;&#x647; &quot;&#x642;&#x627;&#x626;&#x645;&#x629;&quot; &#x644;&#x630;&#x644;&#x643; &#x627;&#x644;&#x645;&#x62B;&#x627;&#x644; &#x623;&#x62F;&#x646;&#x627;&#x647; &#x64A;&#x648;&#x636;&#x62D; &#x643;&#x64A;&#x641; &#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x647;&#x630;&#x627; &#x627;&#x644;&#x645;&#x62D;&#x648;&#x644; &#x641;&#x64A; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; <code>()app.route@</code>.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># myapp/views.py &#x645;&#x644;&#x641;</span>
+
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> app
+
+<span class="hljs-meta">@app.route(&apos;/r/&lt;list:subreddits&gt;&apos;)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">subreddit_home</span><span class="hljs-params">(subreddits)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;Show all of the posts for the given subreddits.&quot;&quot;&quot;</span>
+    posts = []
+    <span class="hljs-keyword">for</span> subreddit <span class="hljs-keyword">in</span> subreddits:
+        posts.extend(subreddit.posts)
+
+    <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">&apos;/r/index.html&apos;</span>, posts=posts)
+</code></pre>
+<p>&#x64A;&#x62C;&#x628; &#x623;&#x646; &#x64A;&#x639;&#x645;&#x644; &#x627;&#x644;&#x645;&#x62B;&#x627;&#x644; &#x623;&#x639;&#x644;&#x627;&#x647; &#x643;&#x645;&#x627; &#x641;&#x64A; &#x645;&#x648;&#x642;&#x639; &#x631;&#x64A;&#x62F;&#x64A;&#x62A;. &#x64A;&#x64F;&#x645;&#x643;&#x646; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x646;&#x641;&#x633; &#x627;&#x644;&#x637;&#x631;&#x64A;&#x642;&#x629; &#x644;&#x635;&#x646;&#x639; &#x623;&#x64A; &#x645;&#x62D;&#x648;&#x644; &#x631;&#x648;&#x627;&#x628;&#x637; &#x646;&#x631;&#x64A;&#x62F;&#x647;.</p>
+<h2 id="&#x627;&#x644;&#x62E;&#x644;&#x627;&#x635;&#x629;">&#x627;&#x644;&#x62E;&#x644;&#x627;&#x635;&#x629;</h2>
+<ul style="list-style-type: disc; list-style-position: inside;">
+  <li>&#x64A;&#x633;&#x627;&#x639;&#x62F;&#x646;&#x627; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641; <code>login_required@</code> &#x641;&#x64A; &#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; Flask-Login &#x639;&#x644;&#x649; &#x62D;&#x635;&#x631; &#x648;&#x635;&#x648;&#x644; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645;&#x64A;&#x646; &#x627;&#x644;&#x645;&#x633;&#x62C;&#x644;&#x64A;&#x646; &#x641;&#x642;&#x637; &#x644;&#x628;&#x639;&#x636; &#x62F;&#x648;&#x627;&#x644; &#x627;&#x644;&#x639;&#x631;&#x636;.</li>
+  <li>&#x62A;&#x648;&#x641;&#x631; &#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; Flask-Cache &#x645;&#x62C;&#x645;&#x648;&#x639;&#x629; &#x645;&#x646; &#x627;&#x644;&#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A; &#x644;&#x62A;&#x646;&#x641;&#x64A;&#x630; &#x637;&#x631;&#x642; &#x645;&#x62A;&#x646;&#x648;&#x639;&#x629; &#x645;&#x646; &#x627;&#x644;&#x62A;&#x62E;&#x632;&#x64A;&#x646; &#x627;&#x644;&#x645;&#x624;&#x642;&#x62A;.</li>
+  <li>&#x64A;&#x64F;&#x645;&#x643;&#x646;&#x646;&#x627; &#x62A;&#x637;&#x648;&#x64A;&#x631; &#x645;&#x64F;&#x632;&#x62E;&#x631;&#x650;&#x641;&#x627;&#x62A; &#x639;&#x631;&#x636; &#x645;&#x64F;&#x62E;&#x635;&#x635;&#x629; &#x644;&#x62A;&#x633;&#x627;&#x639;&#x62F;&#x646;&#x627; &#x639;&#x644;&#x649; &#x62A;&#x646;&#x638;&#x64A;&#x645; &#x627;&#x644;&#x634;&#x64A;&#x641;&#x631;&#x629; &#x627;&#x644;&#x628;&#x631;&#x645;&#x62C;&#x64A;&#x629; &#x648;&#x644;&#x644;&#x625;&#x644;&#x62A;&#x632;&#x627;&#x645; &#x628;&#x645;&#x628;&#x62F;&#x623; &quot;<a href="https://ar.wikipedia.org/wiki/%D9%84%D8%A7_%D8%AA%D9%83%D8%B1%D8%B1_%D9%86%D9%81%D8%B3%D9%83" target="_blank">&#x644;&#x627; &#x62A;&#x643;&#x631;&#x631; &#x646;&#x641;&#x633;&#x643;</a>&quot;.</li>
+  <li>&#x64A;&#x64F;&#x645;&#x643;&#x646; &#x623;&#x646; &#x62A;&#x643;&#x648;&#x646; &#x645;&#x62D;&#x648;&#x644;&#x627;&#x62A; &#x627;&#x644;&#x631;&#x648;&#x627;&#x628;&#x637; &#x627;&#x644;&#x645;&#x62E;&#x635;&#x635;&#x629; &#x637;&#x631;&#x64A;&#x642;&#x629; &#x631;&#x627;&#x626;&#x639;&#x629; &#x644;&#x62A;&#x646;&#x641;&#x64A;&#x630; &#x645;&#x64A;&#x632;&#x627;&#x62A; &#x625;&#x628;&#x62F;&#x627;&#x639;&#x64A;&#x629; &#x645;&#x62A;&#x639;&#x644;&#x642;&#x629; &#x628;&#x627;&#x644;&#x631;&#x648;&#x627;&#x628;&#x637;.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="configuration.html" class="navigation navigation-prev " aria-label="Previous page: الإعداد">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="blueprints.html" class="navigation navigation-next " aria-label="Next page: المخططات">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"استخدامات متقدمة لدوال العرض والتوجيه","level":"1.7","depth":1,"next":{"title":"المخططات","level":"1.8","depth":1,"path":"docs/blueprints.md","ref":"docs/blueprints.md","articles":[]},"previous":{"title":"الإعداد","level":"1.6","depth":1,"path":"docs/configuration.md","ref":"docs/configuration.md","articles":[]},"dir":"rtl"},"config":{"plugins":["favicon"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"favicon":{"shortcut":"images/flask.png","bookmark":"images/flask.png"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"استكشف فلاسك","language":"ar","gitbook":"*","direction":"rtl"},"file":{"path":"docs/views.md","mtime":"2018-02-22T11:53:17.510Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-07T12:12:55.213Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

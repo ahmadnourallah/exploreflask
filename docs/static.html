@@ -1,0 +1,563 @@
+
+<!DOCTYPE HTML>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>الملفات الساكنة · استكشف فلاسك</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="conclusion.html" />
+    
+    
+    <link rel="prev" href="templates.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/flask.png' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/flask.png' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="اكتب للبحث" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    الرئيسية
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    المقدمة
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="coding_conventions.html">
+            
+                <a href="coding_conventions.html">
+            
+                    
+                    مواثيق كتابة الشيفرة البرمجية
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="environment.html">
+            
+                <a href="environment.html">
+            
+                    
+                    بيئة العمل
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="organizing.html">
+            
+                <a href="organizing.html">
+            
+                    
+                    تنظيم المشروع
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="configuration.html">
+            
+                <a href="configuration.html">
+            
+                    
+                    الإعداد
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="views.html">
+            
+                <a href="views.html">
+            
+                    
+                    استخدامات متقدمة لدوال العرض والتوجيه
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="blueprints.html">
+            
+                <a href="blueprints.html">
+            
+                    
+                    المخططات
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="templates.html">
+            
+                <a href="templates.html">
+            
+                    
+                    القوالب
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="static.html">
+            
+                <a href="static.html">
+            
+                    
+                    الملفات الساكنة
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="conclusion.html">
+            
+                <a href="conclusion.html">
+            
+                    
+                    الخاتمة
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            نشرت مع GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >الملفات الساكنة</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A;-&#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629;">&#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629;</h1>
+<p><img src="../images/static.png"></p>
+<p>&#x643;&#x645;&#x627; &#x64A;&#x648;&#x636;&#x62D; &#x627;&#x633;&#x645;&#x647;&#x627;&#x60C; &#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629; &#x647;&#x64A; &#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x62A;&#x64A; &#x644;&#x627; &#x62A;&#x62A;&#x63A;&#x64A;&#x631;. &#x641;&#x64A; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x643; &#x627;&#x644;&#x639;&#x627;&#x62F;&#x64A;&#x60C; &#x633;&#x62A;&#x62C;&#x62F; &#x645;&#x644;&#x641;&#x627;&#x62A; &#x633;&#x627;&#x643;&#x646;&#x629; &#x645;&#x62B;&#x644; &#x645;&#x644;&#x641;&#x627;&#x62A; CSS &#x648;&#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x62C;&#x627;&#x641;&#x627;&#x633;&#x643;&#x631;&#x628;&#x62A; &#x648;&#x627;&#x644;&#x635;&#x648;&#x631;. &#x642;&#x62F; &#x64A;&#x62A;&#x636;&#x645;&#x646; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x643; &#x623;&#x64A;&#x636;&#x627;&#x64B; &#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x635;&#x648;&#x62A; &#x648;&#x63A;&#x64A;&#x631;&#x647;&#x627; &#x645;&#x646; &#x627;&#x644;&#x623;&#x634;&#x64A;&#x627;&#x621; &#x627;&#x644;&#x645;&#x634;&#x627;&#x628;&#x647;&#x629;.</p>
+<h2 id="&#x62A;&#x646;&#x638;&#x64A;&#x645;-&#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A;-&#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629;">&#x62A;&#x646;&#x638;&#x64A;&#x645; &#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629;</h2>
+<p>&#x633;&#x646;&#x646;&#x634;&#x626; &#x62F;&#x644;&#x64A;&#x644;&#x627;&#x64B; &#x644;&#x645;&#x644;&#x641;&#x627;&#x62A;&#x646;&#x627; &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629; &#x648;&#x633;&#x646;&#x633;&#x645;&#x64A;&#x647; <em>static</em> &#x628;&#x62F;&#x627;&#x62E;&#x644; &#x62D;&#x632;&#x645;&#x629; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x646;&#x627;.</p>
+<pre><code>myapp/
+    __init__.py
+    static/
+    templates/
+    views/
+    models.py
+run.py
+</code></pre><p>&#x643;&#x64A;&#x641;&#x64A;&#x629; &#x62A;&#x646;&#x638;&#x64A;&#x645; &#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A; &#x628;&#x62F;&#x627;&#x62E;&#x644; &#x627;&#x644;&#x62F;&#x644;&#x64A;&#x644; <code>/static</code> &#x647;&#x64A; &#x62A;&#x641;&#x636;&#x64A;&#x644; &#x634;&#x62E;&#x635;&#x64A; &#x645;&#x62D;&#x636;. &#x634;&#x62E;&#x635;&#x64A;&#x627;&#x64B;&#x60C; &#x623;&#x646;&#x632;&#x639;&#x62C; &#x642;&#x644;&#x64A;&#x644;&#x627;&#x64B; &#x645;&#x646; &#x627;&#x646;&#x645;&#x632;&#x627;&#x62C; &#x645;&#x643;&#x62A;&#x628;&#x627;&#x62A; &#x627;&#x644;&#x637;&#x631;&#x641; &#x627;&#x644;&#x62B;&#x627;&#x644;&#x62B; (&#x645;&#x62B;&#x644; &#x62C;&#x64A;&#x643;&#x648;&#x631;&#x64A; &#x648;&#x628;&#x648;&#x62A;&#x633;&#x62A;&#x631;&#x627;&#x628;) &#x645;&#x639; &#x645;&#x644;&#x641;&#x627;&#x62A; CSS &#x648;&#x627;&#x644;&#x62C;&#x627;&#x641;&#x627;&#x633;&#x643;&#x631;&#x628;&#x62A; &#x62E;&#x627;&#x635;&#x62A;&#x64A;. &#x644;&#x62A;&#x62C;&#x646;&#x628; &#x630;&#x644;&#x643;&#x60C; &#x623;&#x646;&#x635;&#x62D; &#x628;&#x641;&#x635;&#x644; &#x645;&#x643;&#x62A;&#x628;&#x627;&#x62A; &#x627;&#x644;&#x637;&#x631;&#x641; &#x627;&#x644;&#x62B;&#x627;&#x644;&#x62B; &#x648;&#x648;&#x636;&#x639;&#x647;&#x627; &#x628;&#x62F;&#x627;&#x62E;&#x644; &#x627;&#x644;&#x645;&#x62C;&#x644;&#x62F; <em>/lib</em> &#x641;&#x64A; &#x62F;&#x644;&#x64A;&#x644; &#x645;&#x646;&#x627;&#x633;&#x628; &#x644;&#x647;&#x627;. &#x628;&#x639;&#x636; &#x627;&#x644;&#x645;&#x634;&#x627;&#x631;&#x64A;&#x639; &#x62A;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x627;&#x644;&#x62F;&#x644;&#x64A;&#x644; <em>/vendor</em> &#x628;&#x62F;&#x644;&#x627;&#x64B; &#x645;&#x646; <em>/lib</em>.</p>
+<pre><code>static/
+    css/
+        lib/
+            bootstrap.css
+        style.css
+        home.css
+        admin.css
+    js/
+        lib/
+            jquery.js
+        home.js
+        admin.js
+    img/
+        logo.svg
+        favicon.ico
+</code></pre><h3 id="&#x639;&#x631;&#x636;-&#x623;&#x64A;&#x642;&#x648;&#x646;&#x629;-&#x627;&#x644;&#x645;&#x641;&#x636;&#x644;&#x629;">&#x639;&#x631;&#x636; &#x623;&#x64A;&#x642;&#x648;&#x646;&#x629; &#x627;&#x644;&#x645;&#x641;&#x636;&#x644;&#x629;</h3>
+<p>&#x633;&#x62A;&#x64F;&#x639;&#x631;&#x64E;&#x636; &#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629; &#x628;&#x62F;&#x627;&#x62E;&#x644; &#x627;&#x644;&#x62F;&#x644;&#x64A;&#x644; <em>static</em> &#x645;&#x646; &#x627;&#x644;&#x631;&#x627;&#x628;&#x637; <em>/example.com/static</em>. &#x62A;&#x62A;&#x648;&#x642;&#x639; &#x645;&#x62A;&#x635;&#x641;&#x62D;&#x627;&#x62A; &#x627;&#x644;&#x648;&#x64A;&#x628; &#x648;&#x63A;&#x64A;&#x631;&#x647;&#x627; &#x645;&#x646; &#x627;&#x644;&#x628;&#x631;&#x645;&#x62C;&#x64A;&#x627;&#x62A; &#x648;&#x62C;&#x648;&#x62F; &#x623;&#x64A;&#x642;&#x648;&#x646;&#x629; &#x627;&#x644;&#x645;&#x641;&#x636;&#x644;&#x629; (favicon) &#x641;&#x64A; &#x627;&#x644;&#x631;&#x627;&#x628;&#x637; <em>example.com/favicon.ico</em> &#x625;&#x641;&#x62A;&#x631;&#x627;&#x636;&#x64A;&#x627;&#x64B;. &#x644;&#x625;&#x635;&#x644;&#x627;&#x62D; &#x647;&#x630;&#x627; &#x627;&#x644;&#x62A;&#x636;&#x627;&#x631;&#x628;&#x60C; &#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x625;&#x636;&#x627;&#x641;&#x629; &#x627;&#x644;&#x633;&#x637;&#x631; &#x627;&#x644;&#x62A;&#x627;&#x644;&#x64A; &#x625;&#x644;&#x649; &#x642;&#x633;&#x645; <code>&lt;head&gt;</code> &#x641;&#x64A; &#x642;&#x627;&#x644;&#x628; &#x645;&#x648;&#x642;&#x639;&#x646;&#x627;.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;shortcut icon&quot;</span>
+    <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{{ url_for(&apos;static&apos;, filename=&apos;img/favicon.ico&apos;) }}&quot;</span>&gt;</span>
+</code></pre>
+<h2 id="&#x625;&#x62F;&#x627;&#x631;&#x629;-&#x627;&#x644;&#x623;&#x635;&#x648;&#x644;-&#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A;-&#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629;-&#x628;&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645;-&#x625;&#x636;&#x627;&#x641;&#x629;-flask-assets">&#x625;&#x62F;&#x627;&#x631;&#x629; &#x627;&#x644;&#x623;&#x635;&#x648;&#x644; (&#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A;) &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629; &#x628;&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x625;&#x636;&#x627;&#x641;&#x629; Flask-Assets</h2>
+<p>&#x625;&#x636;&#x627;&#x641;&#x629; Flask-Assets &#x647;&#x64A; &#x625;&#x636;&#x627;&#x641;&#x629; &#x645;&#x62A;&#x62E;&#x635;&#x635;&#x629; &#x628;&#x625;&#x62F;&#x627;&#x631;&#x629; &#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629;. &#x62A;&#x62A;&#x64A;&#x62D; &#x647;&#x630;&#x647; &#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x623;&#x62F;&#x627;&#x62A;&#x627;&#x646; &#x645;&#x641;&#x64A;&#x62F;&#x62A;&#x627;&#x646; &#x628;&#x634;&#x643;&#x644; &#x643;&#x628;&#x64A;&#x631;. &#x62A;&#x633;&#x645;&#x62D; &#x644;&#x643; &#x627;&#x644;&#x645;&#x64A;&#x632;&#x629; &#x627;&#x644;&#x623;&#x648;&#x644;&#x649; &#x628;&#x62A;&#x639;&#x631;&#x64A;&#x641; <strong>&#x631;&#x632;&#x645;</strong> (bundles) &#x645;&#x646; &#x627;&#x644;&#x623;&#x635;&#x648;&#x644; &#x641;&#x64A; &#x634;&#x64A;&#x641;&#x631;&#x629; &#x628;&#x627;&#x64A;&#x62B;&#x648;&#x646; &#x62E;&#x627;&#x635;&#x62A;&#x643; &#x64A;&#x64F;&#x645;&#x643;&#x650;&#x646; &#x625;&#x62F;&#x631;&#x627;&#x62C;&#x647;&#x627; &#x645;&#x639;&#x627;&#x64B; &#x641;&#x64A; &#x642;&#x627;&#x644;&#x628; &#x645;&#x648;&#x642;&#x639;&#x643;. &#x623;&#x645;&#x627; &#x627;&#x644;&#x645;&#x64A;&#x632;&#x629; &#x627;&#x644;&#x62B;&#x627;&#x646;&#x64A;&#x629; &#x641;&#x62A;&#x633;&#x645;&#x62D; &#x644;&#x643; <strong>&#x628;&#x627;&#x644;&#x645;&#x639;&#x627;&#x644;&#x62C;&#x629; &#x627;&#x644;&#x645;&#x633;&#x628;&#x642;&#x629;</strong> (pre-process) &#x644;&#x62A;&#x644;&#x643; &#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A;. &#x647;&#x630;&#x627; &#x64A;&#x639;&#x646;&#x64A; &#x623;&#x646;&#x647; &#x64A;&#x645;&#x643;&#x646;&#x643; &#x645;&#x632;&#x62C; &#x648;&#x62A;&#x635;&#x63A;&#x64A;&#x631; &#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x640; CSS &#x648;&#x627;&#x644;&#x62C;&#x627;&#x641;&#x627;&#x633;&#x643;&#x631;&#x628;&#x62A; &#x62E;&#x627;&#x635;&#x62A;&#x643; &#x628;&#x62D;&#x64A;&#x62B; &#x644;&#x646; &#x64A;&#x643;&#x648;&#x646; &#x639;&#x644;&#x649; &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x633;&#x648;&#x649; &#x62A;&#x62D;&#x645;&#x64A;&#x644; &#x645;&#x644;&#x641;&#x64A;&#x646; &#x645;&#x64F;&#x635;&#x63A;&#x631;&#x64A;&#x646; &#x645;&#x646; &#x62F;&#x648;&#x646; &#x625;&#x62C;&#x628;&#x627;&#x631;&#x643; &#x639;&#x644;&#x649; &#x62A;&#x637;&#x648;&#x64A;&#x631; &#x62E;&#x637; &#x636;&#x62E; &#x645;&#x639;&#x642;&#x62F;. &#x64A;&#x645;&#x643;&#x646;&#x643; &#x62D;&#x62A;&#x649; &#x62A;&#x62C;&#x645;&#x64A;&#x639; (compile) &#x645;&#x644;&#x641;&#x627;&#x62A;&#x643; &#x645;&#x646; &#x645;&#x635;&#x627;&#x62F;&#x631; Sass&#x60C; &#x648; LESS&#x60C; &#x648; CoffeeScript &#x648;&#x63A;&#x64A;&#x631;&#x647;&#x627; &#x645;&#x646; &#x627;&#x644;&#x645;&#x635;&#x627;&#x62F;&#x631; &#x627;&#x644;&#x623;&#x62E;&#x631;&#x649;.</p>
+<pre><code>static/
+    css/
+        lib/
+            reset.css
+        common.css
+        home.css
+        admin.css
+    js/
+        lib/
+            jquery-1.10.2.js
+            Chart.js
+        home.js
+        admin.js
+    img/
+        logo.svg
+        favicon.ico
+</code></pre><h3 id="&#x62A;&#x639;&#x631;&#x64A;&#x641;-&#x627;&#x644;&#x631;&#x632;&#x645;">&#x62A;&#x639;&#x631;&#x64A;&#x641; &#x627;&#x644;&#x631;&#x632;&#x645;</h3>
+<p>&#x64A;&#x645;&#x644;&#x643; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x646;&#x627; &#x642;&#x633;&#x645;&#x64A;&#x646;: &#x627;&#x644;&#x645;&#x648;&#x642;&#x639; &#x627;&#x644;&#x639;&#x645;&#x648;&#x645;&#x64A; &#x648;&#x644;&#x648;&#x62D;&#x629; &#x62A;&#x62D;&#x643;&#x645; &#x627;&#x644;&#x645;&#x634;&#x631;&#x641;&#x60C; &#x648;&#x64A;&#x64F;&#x634;&#x627;&#x631; &#x625;&#x644;&#x64A;&#x647;&#x645; &#x628;&#x640; &quot;home&quot; &#x648; &quot;admin&quot; &#x639;&#x644;&#x649; &#x627;&#x644;&#x62A;&#x648;&#x627;&#x644;&#x64A; &#x641;&#x64A; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x646;&#x627;. &#x633;&#x646;&#x64F;&#x639;&#x631;&#x650;&#x641; &#x623;&#x631;&#x628;&#x639; &#x631;&#x632;&#x645; &#x62A;&#x63A;&#x637;&#x64A; &#x645;&#x644;&#x641;&#x627;&#x62A; CSS &#x648;&#x627;&#x644;&#x62C;&#x627;&#x641;&#x627;&#x633;&#x643;&#x631;&#x628;&#x62A; &#x644;&#x643;&#x644; &#x642;&#x633;&#x645;. &#x633;&#x646;&#x64F;&#x639;&#x631;&#x650;&#x641; &#x627;&#x644;&#x631;&#x632;&#x645; &#x641;&#x64A; &#x627;&#x644;&#x648;&#x62D;&#x62F;&#x629; <em>assets</em> &#x628;&#x62F;&#x627;&#x62E;&#x644; &#x627;&#x644;&#x62D;&#x632;&#x645;&#x629; <code>util</code>.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># myapp/util/assets.py &#x645;&#x644;&#x641;</span>
+
+<span class="hljs-keyword">from</span> flask_assets <span class="hljs-keyword">import</span> Bundle, Environment
+<span class="hljs-keyword">from</span> .. <span class="hljs-keyword">import</span> app
+
+bundles = {
+
+    <span class="hljs-string">&apos;home_js&apos;</span>: Bundle(
+        <span class="hljs-string">&apos;js/lib/jquery-1.10.2.js&apos;</span>,
+        <span class="hljs-string">&apos;js/home.js&apos;</span>,
+        output=<span class="hljs-string">&apos;gen/home.js&apos;</span>),
+
+    <span class="hljs-string">&apos;home_css&apos;</span>: Bundle(
+        <span class="hljs-string">&apos;css/lib/reset.css&apos;</span>,
+        <span class="hljs-string">&apos;css/common.css&apos;</span>,
+        <span class="hljs-string">&apos;css/home.css&apos;</span>,
+        output=<span class="hljs-string">&apos;gen/home.css&apos;</span>),
+
+    <span class="hljs-string">&apos;admin_js&apos;</span>: Bundle(
+        <span class="hljs-string">&apos;js/lib/jquery-1.10.2.js&apos;</span>,
+        <span class="hljs-string">&apos;js/lib/Chart.js&apos;</span>,
+        <span class="hljs-string">&apos;js/admin.js&apos;</span>,
+        output=<span class="hljs-string">&apos;gen/admin.js&apos;</span>),
+
+    <span class="hljs-string">&apos;admin_css&apos;</span>: Bundle(
+        <span class="hljs-string">&apos;css/lib/reset.css&apos;</span>,
+        <span class="hljs-string">&apos;css/common.css&apos;</span>,
+        <span class="hljs-string">&apos;css/admin.css&apos;</span>,
+        output=<span class="hljs-string">&apos;gen/admin.css&apos;</span>)
+}
+
+assets = Environment(app)
+
+assets.register(bundles)
+</code></pre>
+<p>&#x62A;&#x642;&#x648;&#x645; &#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x628;&#x645;&#x632;&#x62C; &#x645;&#x644;&#x641;&#x627;&#x62A;&#x643; &#x62D;&#x633;&#x628; &#x627;&#x644;&#x62A;&#x631;&#x62A;&#x64A;&#x628; &#x627;&#x644;&#x630;&#x64A; &#x62A;&#x645; &#x633;&#x631;&#x62F;&#x647;&#x645; &#x628;&#x647;. &#x641;&#x625;&#x630;&#x627; &#x643;&#x627;&#x646; &#x645;&#x644;&#x641; <em>admin.js</em> &#x64A;&#x62A;&#x637;&#x644;&#x628; &#x645;&#x644;&#x641; <em>jquery-1.10.2.js</em>&#x60C; &#x627;&#x62D;&#x631;&#x635; &#x639;&#x644;&#x649; &#x648;&#x636;&#x639; &#x645;&#x644;&#x641; &#x627;&#x644;&#x62C;&#x64A;&#x643;&#x648;&#x631;&#x64A; &#x623;&#x648;&#x644;&#x627;&#x64B;.</p>
+<p>&#x642;&#x645;&#x646;&#x627; &#x628;&#x62A;&#x639;&#x631;&#x64A;&#x641; &#x627;&#x644;&#x631;&#x632;&#x645; &#x641;&#x64A; &#x62F;&#x644;&#x64A;&#x644; &#x644;&#x62C;&#x639;&#x644; &#x62A;&#x633;&#x62C;&#x644;&#x64A;&#x647;&#x645; &#x623;&#x633;&#x647;&#x644;. &#x627;&#x644;&#x62D;&#x632;&#x645;&#x629; webassets&#x60C; &#x648;&#x627;&#x644;&#x62A;&#x64A; &#x62A;&#x639;&#x62A;&#x645;&#x62F; &#x639;&#x644;&#x64A;&#x647;&#x627; &#x625;&#x636;&#x627;&#x641;&#x629; Flask-Assets &#x62A;&#x62A;&#x64A;&#x62D; &#x644;&#x646;&#x627; &#x62A;&#x633;&#x62C;&#x64A;&#x644; &#x627;&#x644;&#x631;&#x632;&#x645; &#x628;&#x639;&#x62F;&#x629; &#x637;&#x631;&#x642;&#x60C; &#x648;&#x645;&#x646;&#x647;&#x627; &#x62A;&#x645;&#x631;&#x64A;&#x631; &#x642;&#x627;&#x645;&#x648;&#x633; &#x643;&#x627;&#x644;&#x630;&#x64A; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x645;&#x646;&#x627;&#x647; &#x641;&#x64A; &#x627;&#x644;&#x645;&#x642;&#x62A;&#x637;&#x641; &#x627;&#x644;&#x633;&#x627;&#x628;&#x642;.<sup>[1]</sup></p>
+<p>&#x641;&#x64A; &#x62D;&#x64A;&#x646; &#x623;&#x646;&#x646;&#x627; &#x646;&#x64F;&#x633;&#x62C;&#x650;&#x644; &#x631;&#x632;&#x645;&#x646;&#x627; &#x641;&#x64A; <code>util.assets</code>&#x60C; &#x641;&#x643;&#x644; &#x645;&#x627; &#x639;&#x644;&#x64A;&#x646;&#x627; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x647; &#x647;&#x648; &#x627;&#x633;&#x62A;&#x64A;&#x631;&#x627;&#x62F; &#x62A;&#x644;&#x643; &#x627;&#x644;&#x648;&#x62D;&#x62F;&#x629; &#x641;&#x64A; &#x627;&#x644;&#x645;&#x644;&#x641; <i>init</i><i>__</i><i>.py</i><i>__</i> &#x628;&#x639;&#x62F; &#x627;&#x633;&#x62A;&#x647;&#x644;&#x627;&#x644; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x646;&#x627;.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># myapp/__init__.py &#x645;&#x644;&#x641;</span>
+
+<span class="hljs-comment"># [...] &#x647;&#x646;&#x627; &#x646;&#x642;&#x648;&#x645; &#x628;&#x627;&#x633;&#x62A;&#x647;&#x644;&#x627;&#x644; &#x627;&#x644;&#x62A;&#x637;&#x628;&#x64A;&#x642;</span>
+
+<span class="hljs-keyword">from</span> .util <span class="hljs-keyword">import</span> assets
+</code></pre>
+<h3 id="&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645;-&#x627;&#x644;&#x631;&#x632;&#x645;">&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x627;&#x644;&#x631;&#x632;&#x645;</h3>
+<p>&#x644;&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x627;&#x644;&#x631;&#x632;&#x645; &#x627;&#x644;&#x62E;&#x627;&#x635;&#x629; &#x628;&#x642;&#x633;&#x645; &#x644;&#x648;&#x62D;&#x629; &#x627;&#x644;&#x645;&#x634;&#x631;&#x641;&#x60C; &#x633;&#x646;&#x642;&#x648;&#x645; &#x628;&#x625;&#x62F;&#x631;&#x627;&#x62C;&#x647;&#x645; &#x641;&#x64A; &#x627;&#x644;&#x642;&#x627;&#x644;&#x628; &#x627;&#x644;&#x623;&#x628; &#x644;&#x642;&#x633;&#x645; &#x627;&#x644;&#x645;&#x634;&#x631;&#x641;: <em>admin/layout.html</em>.</p>
+<pre><code>templates/
+    home/
+        layout.html
+        index.html
+        about.html
+    admin/
+        layout.html
+        dash.html
+        stats.html
+</code></pre><pre><code class="lang-html">{# myapp/templates/admin/layout.html &#x645;&#x644;&#x641; #}
+
+<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        {% assets &quot;admin_js&quot; %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;{{ ASSET_URL }}&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        {% endassets %}
+        {% assets &quot;admin_css&quot; %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{{ ASSET_URL }}&quot;</span> /&gt;</span>
+        {% endassets %}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    {% block body %}
+    {% endblock %}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x627;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x646;&#x641;&#x633; &#x627;&#x644;&#x634;&#x64A;&#x621; &#x644;&#x631;&#x632;&#x645; &#x627;&#x644;&#x642;&#x633;&#x645; &quot;home&quot; &#x641;&#x64A; &#x627;&#x644;&#x645;&#x644;&#x641; <em>templates/home/layout.html</em>.</p>
+<h3 id="&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645;-&#x627;&#x644;&#x645;&#x631;&#x634;&#x62D;&#x627;&#x62A;">&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x627;&#x644;&#x645;&#x631;&#x634;&#x62D;&#x627;&#x62A;</h3>
+<p>&#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x627;&#x644;&#x645;&#x631;&#x634;&#x62D;&#x627;&#x62A; &#x644;&#x644;&#x642;&#x64A;&#x627;&#x645; &#x628;&#x645;&#x639;&#x627;&#x644;&#x62C;&#x629; &#x645;&#x633;&#x628;&#x642;&#x629; &#x644;&#x645;&#x644;&#x641;&#x627;&#x62A;&#x646;&#x627; &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629;. &#x647;&#x630;&#x627; &#x645;&#x641;&#x64A;&#x62F; &#x628;&#x634;&#x643;&#x644; &#x62E;&#x627;&#x635; &#x644;&#x62A;&#x635;&#x63A;&#x64A;&#x631; &#x631;&#x632;&#x645; CSS &#x648;&#x627;&#x644;&#x62C;&#x627;&#x641;&#x627;&#x633;&#x643;&#x631;&#x628;&#x62A; &#x62E;&#x627;&#x635;&#x62A;&#x646;&#x627;.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># myapp/util/assets.py &#x645;&#x644;&#x641;</span>
+
+<span class="hljs-comment"># [...]</span>
+
+bundles = {
+
+    <span class="hljs-string">&apos;home_js&apos;</span>: Bundle(
+        <span class="hljs-string">&apos;lib/jquery-1.10.2.js&apos;</span>,
+        <span class="hljs-string">&apos;js/home.js&apos;</span>,
+        output=<span class="hljs-string">&apos;gen/home.js&apos;</span>,
+        filters=<span class="hljs-string">&apos;jsmin&apos;</span>),
+
+    <span class="hljs-string">&apos;home_css&apos;</span>: Bundle(
+        <span class="hljs-string">&apos;lib/reset.css&apos;</span>,
+        <span class="hljs-string">&apos;css/common.css&apos;</span>,
+        <span class="hljs-string">&apos;css/home.css&apos;</span>,
+        output=<span class="hljs-string">&apos;gen/home.css&apos;</span>,
+        filters=<span class="hljs-string">&apos;cssmin&apos;</span>),
+
+    <span class="hljs-string">&apos;admin_js&apos;</span>: Bundle(
+        <span class="hljs-string">&apos;lib/jquery-1.10.2.js&apos;</span>,
+        <span class="hljs-string">&apos;lib/Chart.js&apos;</span>,
+        <span class="hljs-string">&apos;js/admin.js&apos;</span>,
+        output=<span class="hljs-string">&apos;gen/admin.js&apos;</span>,
+        filters=<span class="hljs-string">&apos;jsmin&apos;</span>),
+
+    <span class="hljs-string">&apos;admin_css&apos;</span>: Bundle(
+        <span class="hljs-string">&apos;lib/reset.css&apos;</span>,
+        <span class="hljs-string">&apos;css/common.css&apos;</span>,
+        <span class="hljs-string">&apos;css/admin.css&apos;</span>,
+        output=<span class="hljs-string">&apos;gen/admin.css&apos;</span>,
+        filters=<span class="hljs-string">&apos;cssmin&apos;</span>)
+}
+
+<span class="hljs-comment"># [...]</span>
+</code></pre>
+<blockquote>
+<b>&#x645;&#x644;&#x627;&#x62D;&#x638;&#x629;</b><br>
+&#x644;&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x627;&#x644;&#x645;&#x631;&#x634;&#x62D;&#x627;&#x62A; <code>jsmin</code> &#x648; <code>cssmin</code>&#x60C; &#x627;&#x62D;&#x631;&#x635; &#x639;&#x644;&#x649; &#x62A;&#x62B;&#x628;&#x64A;&#x62A; &#x627;&#x644;&#x62D;&#x632;&#x645;&#x62A;&#x64A;&#x646; <code>jsmin</code> &#x648; <code>cssmin</code> (&#x639;&#x644;&#x649; &#x633;&#x628;&#x64A;&#x644; &#x627;&#x644;&#x645;&#x62B;&#x627;&#x644; &#x628;&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; <code>pip install jsmin cssmin</code>). &#x62A;&#x623;&#x643;&#x62F; &#x645;&#x646; &#x625;&#x636;&#x627;&#x641;&#x62A;&#x647;&#x645; &#x625;&#x644;&#x649; &#x645;&#x644;&#x641; &#x627;&#x644;&#x645;&#x62A;&#x637;&#x644;&#x628;&#x627;&#x62A; (<i>requirements.txt</i>) &#x623;&#x64A;&#x636;&#x627;&#x64B;.
+</blockquote>
+
+<p>&#x633;&#x62A;&#x642;&#x648;&#x645; &#x625;&#x636;&#x627;&#x641;&#x629; Flask-Assetes &#x628;&#x62F;&#x645;&#x62C; &#x648;&#x636;&#x63A;&#x637; &#x645;&#x644;&#x641;&#x627;&#x62A;&#x646;&#x627; &#x641;&#x64A; &#x623;&#x648;&#x644; &#x645;&#x631;&#x629; &#x64A;&#x64F;&#x639;&#x631;&#x64E;&#x636; &#x641;&#x64A;&#x647;&#x627; &#x627;&#x644;&#x642;&#x627;&#x644;&#x628;&#x60C; &#x648;&#x633;&#x62A;&#x642;&#x648;&#x645; &#x62A;&#x644;&#x642;&#x627;&#x626;&#x64A;&#x627;&#x64B; &#x628;&#x62A;&#x62D;&#x62F;&#x64A;&#x62B; &#x627;&#x644;&#x645;&#x644;&#x641; &#x627;&#x644;&#x645;&#x636;&#x63A;&#x648;&#x637; &#x639;&#x646;&#x62F;&#x645;&#x627; &#x64A;&#x62A;&#x645; &#x62A;&#x62D;&#x62F;&#x64A;&#x62B; &#x623;&#x62D;&#x62F; &#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x645;&#x635;&#x62F;&#x631;.</p>
+<blockquote>
+<b>&#x645;&#x644;&#x627;&#x62D;&#x638;&#x629;</b><br>
+&#x625;&#x630;&#x627; &#x642;&#x645;&#x62A; &#x628;&#x625;&#x639;&#x637;&#x627;&#x621; &#x627;&#x644;&#x62E;&#x64A;&#x627;&#x631; <i>ASSETS_DEBUG</i> &#x627;&#x644;&#x642;&#x64A;&#x645;&#x629; <i>True</i> &#x641;&#x64A; &#x645;&#x644;&#x641; &#x627;&#x644;&#x625;&#x639;&#x62F;&#x627;&#x62F; &#x62E;&#x627;&#x635;&#x62A;&#x643;&#x60C; &#x641;&#x633;&#x62A;&#x642;&#x648;&#x645; &#x627;&#x644;&#x625;&#x636;&#x627;&#x641;&#x629; &#x628;&#x625;&#x62E;&#x631;&#x627;&#x62C; &#x643;&#x644; &#x645;&#x644;&#x641; &#x645;&#x635;&#x62F;&#x631; &#x645;&#x641;&#x631;&#x62F;&#x627;&#x64B; &#x628;&#x62F;&#x644;&#x627;&#x64B; &#x645;&#x646; &#x62F;&#x645;&#x62C;&#x647;&#x645;.
+</blockquote>
+
+<blockquote>
+<b>&#x645;&#x644;&#x627;&#x62D;&#x638;&#x629;</b><br>
+&#x623;&#x644;&#x642;&#x64A; &#x646;&#x638;&#x631;&#x629; &#x639;&#x644;&#x649; &#x628;&#x639;&#x636; <a href="http://elsdoerfer.name/docs/webassets/builtin_filters.html#js-css-compilers" target="_blank">&#x627;&#x644;&#x645;&#x631;&#x634;&#x62D;&#x627;&#x62A; &#x627;&#x644;&#x623;&#x62E;&#x631;&#x649;</a> &#x627;&#x644;&#x62A;&#x64A; &#x64A;&#x645;&#x643;&#x646;&#x643; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645;&#x647;&#x627; &#x645;&#x639; &#x625;&#x636;&#x627;&#x641;&#x629; Flask-Assets.
+</blockquote>
+
+<h2 id="&#x627;&#x644;&#x62E;&#x644;&#x627;&#x635;&#x629;">&#x627;&#x644;&#x62E;&#x644;&#x627;&#x635;&#x629;</h2>
+<ul style="list-style-type: disc; list-style-position: inside;">
+  <li>&#x62A;&#x648;&#x636;&#x639; &#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629; &#x641;&#x64A; &#x627;&#x644;&#x62F;&#x644;&#x64A;&#x644; <i>/static</i>.</li>
+  <li>&#x642;&#x645; &#x628;&#x641;&#x635;&#x644; &#x645;&#x643;&#x62A;&#x628;&#x627;&#x62A; &#x627;&#x644;&#x637;&#x631;&#x641; &#x627;&#x644;&#x62B;&#x627;&#x644;&#x62B; &#x639;&#x646; &#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629; &#x62E;&#x627;&#x635;&#x62A;&#x643;.</li>
+  <li>&#x62D;&#x62F;&#x62F; &#x645;&#x648;&#x642;&#x639; &#x623;&#x64A;&#x642;&#x648;&#x646;&#x629; &#x627;&#x644;&#x645;&#x641;&#x636;&#x644;&#x629; &#x641;&#x64A; &#x642;&#x648;&#x627;&#x644;&#x628;&#x643;.</li>
+  <li>&#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x625;&#x636;&#x627;&#x641;&#x629; Flask-Assets &#x644;&#x625;&#x62F;&#x631;&#x627;&#x62C; &#x627;&#x644;&#x645;&#x644;&#x641;&#x627;&#x62A; &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629; &#x641;&#x64A; &#x642;&#x648;&#x627;&#x644;&#x628;&#x643;.</li>
+  <li>&#x62A;&#x62A;&#x645;&#x643;&#x646; &#x625;&#x636;&#x627;&#x641;&#x629; Flask-Assets &#x645;&#x646; &#x62A;&#x62C;&#x645;&#x64A;&#x639;&#x60C; &#x648;&#x62F;&#x645;&#x62C;&#x60C; &#x648;&#x636;&#x63A;&#x637; &#x645;&#x644;&#x641;&#x627;&#x62A;&#x643; &#x627;&#x644;&#x633;&#x627;&#x643;&#x646;&#x629;.</li>
+</ul>
+
+<h2 id="&#x627;&#x644;&#x645;&#x635;&#x627;&#x62F;&#x631;-&#x648;&#x627;&#x644;&#x645;&#x631;&#x627;&#x62C;&#x639;">&#x627;&#x644;&#x645;&#x635;&#x627;&#x62F;&#x631; &#x648;&#x627;&#x644;&#x645;&#x631;&#x627;&#x62C;&#x639;</h2>
+<ol style="list-style-type: decimal; list-style-position: inside;">
+  <li>&#x64A;&#x645;&#x643;&#x646;&#x646;&#x627; &#x631;&#x624;&#x64A;&#x629; &#x643;&#x64A;&#x641; &#x62A;&#x639;&#x645;&#x644; &#x639;&#x645;&#x644;&#x64A;&#x629; &#x62A;&#x633;&#x62C;&#x64A;&#x644; &#x627;&#x644;&#x631;&#x632;&#x645; <a href="https://github.com/miracle2k/webassets/blob/0.8/src/webassets/env.py#L380" target="_blank">&#x641;&#x64A; &#x627;&#x644;&#x645;&#x635;&#x62F;&#x631;</a>.</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="templates.html" class="navigation navigation-prev " aria-label="Previous page: القوالب">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="conclusion.html" class="navigation navigation-next " aria-label="Next page: الخاتمة">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"الملفات الساكنة","level":"1.10","depth":1,"next":{"title":"الخاتمة","level":"1.11","depth":1,"path":"docs/conclusion.md","ref":"docs/conclusion.md","articles":[]},"previous":{"title":"القوالب","level":"1.9","depth":1,"path":"docs/templates.md","ref":"docs/templates.md","articles":[]},"dir":"rtl"},"config":{"plugins":["favicon"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"favicon":{"shortcut":"images/flask.png","bookmark":"images/flask.png"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"استكشف فلاسك","language":"ar","gitbook":"*","direction":"rtl"},"file":{"path":"docs/static.md","mtime":"2018-03-07T12:12:32.789Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-07T12:12:55.213Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
