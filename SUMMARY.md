@@ -9,4 +9,5 @@
 * [استخدامات متقدمة لدوال العرض والتوجيه](docs/views.md)
 * [المخططات](docs/blueprints.md)
 * [القوالب](docs/templates.md)
+* [الملفات الساكنة](docs/static.md)
 * [الخاتمة](docs/conclusion.md)
