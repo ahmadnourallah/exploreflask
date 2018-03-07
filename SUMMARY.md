@@ -8,4 +8,5 @@
 * [الإعداد](docs/configuration.md)
 * [استخدامات متقدمة لدوال العرض والتوجيه](docs/views.md)
 * [المخططات](docs/blueprints.md)
+* [القوالب](docs/templates.md)
 * [الخاتمة](docs/conclusion.md)
