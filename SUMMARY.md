@@ -10,4 +10,5 @@
 * [المخططات](docs/blueprints.md)
 * [القوالب](docs/templates.md)
 * [الملفات الساكنة](docs/static.md)
+* [تخزين البيانات](docs/storing.md)
 * [الخاتمة](docs/conclusion.md)
