@@ -17,7 +17,7 @@
 دعنا نتعمق بكيفية استخدام هذه الإضافة في الشيفرة. سنقوم بتعريف بعض النماذج ومن ثم إعداد SQLAlchemy. ستوضع النماذج في الملف *myapp/models.py*، ولكن بدايةً سنقوم بتعريف قاعدة البيانات في الملف *myapp/<i>init</i><i>\_\_</i><i>.py</i><i>\_\_</i>*.
 
 ```python
-# ourapp/__init__.py ملف
+# ourapp/__init__.py
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
@@ -33,7 +33,7 @@ db = SQLAlchemy(app)
 اولاً، قمنا باستهلال وإعداد التطبيق (الكائن `app`) ومن ثم استخدمناه لاستهلال معالج قاعدة بيانات SQLAlchemy. سنقوم باستخدام مجلد المثيل لإعداد قواعد البيانات وبالتالي ينبغي علينا استخدام الخيار `instance_relative_config` عند استهلال التطبيق واستدعاء `app.config.from_pyfile` لتحميل المجلد. ومن ثم يمكننا تعريف نماذجنا.
 
 ```python
-# ourapp/models.py ملف
+# ourapp/models.py
 
 from . import db
 
@@ -53,7 +53,7 @@ class Engine(db.Model):
 مازلنا بحاجة لإضافة بعض معلومات قاعدة البيانات إلى ملف إعداداتنا. نحن نستخدم مجلد المثيل لإبقاء متغيرات الإعداد السرية خارج نظام التحكم بالإصدارات، لذلك سنضع تلك المعلومات في الملف *instance/config.py*.
 
 ```python
-# instance/config.py ملف
+# instance/config.py
 
 SQLALCHEMY_DATABASE_URI = "postgresql://user:password@localhost/spaceshipDB"
 ```
