@@ -2,7 +2,7 @@
 
 * [الرئيسية](README.md)
 * [المقدمة](docs/preface.md)
-* [مواثيق كتابة الشيفرة البرمجية](docs/coding_conventions.md)
+* [أعراف كتابة الشيفرة البرمجية](docs/coding_conventions.md)
 * [بيئة العمل](docs/environment.md)
 * [تنظيم المشروع](docs/organizing.md)
 * [الإعداد](docs/configuration.md)
@@ -11,4 +11,5 @@
 * [القوالب](docs/templates.md)
 * [الملفات الساكنة](docs/static.md)
 * [تخزين البيانات](docs/storing.md)
+* [التعامل مع الاستمارات](docs/forms.md)
 * [الخاتمة](docs/conclusion.md)
