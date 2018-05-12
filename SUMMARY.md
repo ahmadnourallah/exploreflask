@@ -11,4 +11,5 @@
 * [القوالب](docs/templates.md)
 * [الملفات الساكنة](docs/static.md)
 * [تخزين البيانات](docs/storing.md)
+* [التعامل مع الاستمارات](docs/forms.md)
 * [الخاتمة](docs/conclusion.md)
