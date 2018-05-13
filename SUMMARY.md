@@ -12,4 +12,5 @@
 * [الملفات الساكنة](docs/static.md)
 * [تخزين البيانات](docs/storing.md)
 * [التعامل مع الاستمارات](docs/forms.md)
+* [أساليب للتعامل مع المُستخدمين](docs/users.md)
 * [الخاتمة](docs/conclusion.md)
